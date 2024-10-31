@@ -1,21 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+
+.neon-box {
+  box-shadow: 0 0 20px rgba(80, 100, 130, 0.5), /* outer glow */
+              0 0 40px rgba(255, 0, 255, 0.3), /* middle glow */
+              0 0 60px rgba(130, 255, 180, 0.2); /* inner glow */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+
+
+
+
+
+/* Loading */
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.loading:before,
+.loading:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.loading:before {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ecf0f1;
+  border-top-color: #3498db;
+  animation: spins 1s linear infinite;
+}
+
+.loading:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  box-shadow: 0 0 5px #3498dbcc;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  animation: pulse 1s ease-out infinite;
+}
+
+@keyframes spins {
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes pulse {
+  0% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+  }
+  50% {
+      opacity: 1;
+      width: 30px;
+      height: 30px;
+  }
+  100% {
+      opacity: 0;
+      width: 50px;
+      height: 50px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+.topbar {
+  @apply z-[9999] top-0 bg-amtblue/75;
 }
+.topbar::before {
+  @apply absolute top-0 h-full w-full bg-amtblue/75;
+  content: '';
+}
+
+
+
+
+
+.hamburger-line {
+  @apply w-8 h-1 my-1.5 block bg-slate-400 rounded-full;
+}
+
+
+
+
+
+
+/* react-resizable Table */
+.react-resizable {
+  position: relative;
+  background-clip: padding-box;
+}
+
+.react-resizable-handle {
+  position: absolute;
+  inset-inline-end: -5px;
+  bottom: 0;
+  z-index: 1;
+  width: 10px;
+  height: 100%;
+  cursor: col-resize;
+}
+
+/* antd Table */
+th.ant-table-cell {
+  font: .7rem Quicksand !important;
+  font-weight: bold !important;
+}
+.ant-table-tbody, .ant-select-selection-item, .ant-select-item-option-content {
+  font: .8rem Quicksand !important;
+}
+
+.ant-table-cell, .ant-table-cell-ellipsis{
+  padding-top: .5rem !important;
+  padding-bottom: .5rem !important;
+  /* margin: 0 !important; */
+}
+
+
+/* .ant-table-cell */
+.ant-table-row:nth-child(odd) {
+  background-color: #f5f5f4; /* Tailwind's slate-100 color */
+}
+
+.ant-table-tbody > tr:nth-child(odd) > .ant-table-cell-fix-left {
+  background-color: #f5f5f4; /* Tailwind's slate-100 color */
+}
+
+.ant-pagination-item a, .ant-pagination-item-link, .ant-select {
+  font-family: Quicksand !important;
+}
+
+
+
+.ant-table-content {
+  overflow-x: auto !important;
+}
+
+
+
