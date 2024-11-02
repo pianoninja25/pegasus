@@ -159,3 +159,6 @@ th.ant-table-cell {
 
 
 
+.ant-select-dropdown {
+  z-index: 99999 !important;
+}
