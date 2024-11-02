@@ -30,7 +30,7 @@ const Header = () => {
 
 
   return (
-    <div className='topbar fixed flex justify-between items-center w-screen h-14'>
+    <div className='topbar fixed flex justify-between items-center w-screen h-14 z-[9999]'>
       
       {/* LOGO */}
       <Link href="/" className='flex gap-1 items-center w-full p-2 z-20 text-2xl'>
@@ -59,7 +59,7 @@ const Header = () => {
 
         {/* TEXT */}
         <nav
-          className={`absolute top-14 right-4 py-2 flex-col w-full max-w-40 rounded-md shadow-md bg-white/70 backdrop-blur-sm 
+          className={`absolute top-14 right-4 py-2 flex-col w-full max-w-40 rounded-md shadow-md bg-white/30 backdrop-blur-md 
           sm:flex-row sm:max-w-xs sm:justify-center sm:left-24 sm:p-0 sm:rounded-full sm:border-4 sm:border-slate-400 
           lg:top-14   
           ${open ? 'flex' : 'hidden sm:flex'}`}

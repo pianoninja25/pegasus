@@ -16,6 +16,19 @@
 }
 
 
+.topbar {
+  @apply z-[99999] top-0 bg-amtblue/75;
+}
+.topbar::before {
+  @apply absolute top-0 h-full w-full bg-amtblue/75;
+  content: '';
+}
+
+
+.hamburger-line {
+  @apply w-8 h-1 my-1.5 block bg-slate-400 rounded-full;
+}
+
 
 
 
@@ -87,22 +100,6 @@
   }
 }
 
-
-.topbar {
-  @apply z-[9999] top-0 bg-amtblue/75;
-}
-.topbar::before {
-  @apply absolute top-0 h-full w-full bg-amtblue/75;
-  content: '';
-}
-
-
-
-
-
-.hamburger-line {
-  @apply w-8 h-1 my-1.5 block bg-slate-400 rounded-full;
-}
 
 
 

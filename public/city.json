@@ -1,0 +1,5587 @@
+[
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "CIBADAK",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "PEGADUNGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "WANAKERTA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PLUIT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "KALIABANG TENGAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "BOJONG KULUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KEBON KOSONG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "HARJAMUKTI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "SABRANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JATISARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "JEBRES",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "SUMBERAGUNG",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "MOJOSONGO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "PANDOWOHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "ABADI JAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "TIMBULHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "SINDUHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "ANCOL",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "SEMANGGI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "BEDAHAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "SARIHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "SABDODADI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "GATAK",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "PEJUANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "KARANGASEM",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "CATURTUNGGAL",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "TRIRENGGO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. SUKOHARJO",
+    "NAME": "PABELAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "SENDANGADI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "NAGRAK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "DONOHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "BEJEN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PADEMANGAN TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "CIANGSANA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "MARGAHAYU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "NGRINGO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "GAMBIR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PENJARINGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "GUNUNG SAHARI UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "PENDOWOHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "TEGALGEDE",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KARET TENGSIN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "MARGAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "KELAPA DUA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "BANGUNHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KEBON MELATI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "WEDOMARTANI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "BINONG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGADUNG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "PENGASINAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "PABUARAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SAWANGAN BARU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "TEGALTIRTO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "LALUNG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MANGUNHARJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "SEPANJANGJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BRINGIN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "LONTAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKALUYU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "DADAP",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "NEGLASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "SASAK PANJANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "KALISUREN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GUBENG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "MAMPANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MEDOKAN SEMAMPIR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MUGASARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KAMPUNG BALI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "DERWATI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "SITIMULYO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "JETIS",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PLEBURAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "MENTENG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPAMOKOLAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "WIROKERTEN",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "RAWASARI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "METESEH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "DAGEN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUKUH PAKIS",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. KARANGANYAR",
+    "NAME": "GAUM",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "JATI SARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SAMBIROTO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BARATAJAYA",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TEGALSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MEKARMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KEDUNG BARUK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BATUNUNGGAL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "WONOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "TELUK PUCUNG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "PENGASINAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "RAWAPANJANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. TANGERANG",
+    "NAME": "CURUG SANGERENG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JATINGALEH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GAYUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "SUSUKAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "TAJURHALANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "PASIRANGIN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KEPUTIH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "PURWANEGARA",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "NEGLASARI",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALIWIRU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "NGINDEN JANGKUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "BANGUNTAPAN",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TINJOMOYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JATIBENING",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SAWANGAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "SUMAMPIR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "MANGGA DUA SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TENGILIS MEJOYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "GROGOL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGONDEWAH RAHAYU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BANGUNHARJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUKUH MENANGGAL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "BATURETNO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "EMBONG KALIASIN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "LAMPER TENGAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "SOKANEGARA",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "KEDUNGWULUH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "KEDAUNG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "HARAPANJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "TONJONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "RAWAJATI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "KARANG SARI",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "MERSI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "RAGAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "ARCAWINANGUN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "CIPADU JAYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "POTORONO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "WONOLOPO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "WONOKROMO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "PANCORAN MAS",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SENDANGMULYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIRKALIKI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "TAMANAN",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "LARANGAN INDAH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANYUMAS",
+    "NAME": "KRANJI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "KREO SELATAN",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAGALIH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TEGALSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "KELAPA INDAH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "NGLOROG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "PILANGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "SRAGEN WETAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "PASIR PUTIH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "BANGUNJIWO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "CIPONDOH INDAH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MENANGGAL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANTUL",
+    "NAME": "TAMANTIRTO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "KRATONAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "CILEUNGSI KIDUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "CIMUNING",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGONDEWAH KIDUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "CIPONDOH MAKMUR",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGONDEWAH KALER",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "TRIDADI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MEDOKAN AYU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "SRAGEN TENGAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SUKAMAJU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "MUSTIKASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "KARANG TENGAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "SEWU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPEDES",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "SARDONOHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "SINE",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "GANDEKAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SUMEDANG",
+    "NAME": "HEGARMANAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "MARGAMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GUNUNG ANYAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "SRAGEN KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SUMEDANG",
+    "NAME": "CIBEUSI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "PAJANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BENDUL MERISI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "SINDUADI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BOGOR",
+    "NAME": "PAKANSARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "JAJAR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "DURENJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "SRIWEDARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "KROYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "BAHAGIA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MEKARRAHAYU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KLAMPIS NGASEM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "SONDAKAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "PORIS GAGA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KARANG POH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIPAGALO",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "KAYURINGINJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURAKARTA",
+    "NAME": "PANULARAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TANDES",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "PEKAYONJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "BOJONGSOANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "PANUNGGANGAN UTARA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "CONDONGCATUR",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CILEUNYI WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "MAGUWOHARJO",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SIWALANKERTO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "RANCAEKEK WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SRAGEN",
+    "NAME": "PURO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KEBAYORAN LAMA UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "PABUARAN",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "MENTENG DALAM",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "GEBANG RAYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MARGAHAYU TENGAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "KARANG MULYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "MUSTIKAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GUNUNG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ANCOL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "GALANGGANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GROGOL SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "BATUJAJAR TIMUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "KEBALEN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKARASA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "PARUNG JAYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIPETE UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. SLEMAN",
+    "NAME": "MINOMARTANI",
+    "stateOrProvince": "DAERAH ISTIMEWA YOGYAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "CANGKORAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PETUKANGAN SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "RANCAEKEK KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "BOJONG RAWALUMBU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "MANGUNJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "MUKTIWARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PACARKELING",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MARGASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JAKASETIA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SAMBIKEREP",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MALAKASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "RANCAMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MANJAHLEGA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG",
+    "NAME": "PORIS PLAWAD INDAH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "LENGKONG GUDANG TIMUR",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KARET SEMANGGI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "RUNGKUT TENGAH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KUJANGSARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "RAWABUNTU",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JATIMURNI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KRAMAT PELA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "RANCAMANYAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "RAWA MEKARJAYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SRIAMUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KALISARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PELA MAMPANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIMEKAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "ARENJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "TEBET TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KUREKSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "CIATER",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "TEBET BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "PONDOK KARYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "JELEGONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAPURA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JATIKRAMAT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PESANGGRAHAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CILANDAK BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. DEMAK",
+    "NAME": "KEBONBATUR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "NGINGAS",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "PISANGAN",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JANTI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "LEBAK BULUS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "KARANGSATRIA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAMBAKOSO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KARET KUNINGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BOGOR",
+    "NAME": "SUKASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "LENGKONG WETAN",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GANDARIA UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "RENGAS",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SIDOKERTO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "MENDAK",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "BABELANKOTA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "BUTUHAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "CEMPAKA PUTIH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BERBEK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "REMPOA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "SRIBIT",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "CIREUNDEU",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "SEGARAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SATRIAMEKAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PASAR MINGGU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "NGELOM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "BINTARA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "KRECEK",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIPETE SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "JURANGMANGU TIMUR",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "KEPANJEN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAWANGSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "KARANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "RAGUNAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "KRANJI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KREMBANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "BAKTI JAYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SRIJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KUNINGAN TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "DELANGGU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JATIMEKAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "RENON",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PONDOK PINANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "BANARAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "TAMAN SARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "SIDOMULYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "BABAKAN",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "BOJONGMENTENG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "DUKUH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "CIJENGKOL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "BOWAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KEBAGUSAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "TAMBUN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "CENGKARENG TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "CIBUNTU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. KLATEN",
+    "NAME": "TLOBONG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "JAKAMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "PEMOGAN",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "PANJER",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "SANUR KAUH",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "KERTAMUKTI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GROGOL UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PONDOK BAMBU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "SIDAKARYA",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "PEDUNGAN",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SRIMUKTI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "JATINEGARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DENPASAR",
+    "NAME": "DANGIN PURI KANGIN",
+    "stateOrProvince": "BALI"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEMBANGAN SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "SEMANAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIPINANG CEMPEDAK",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KAYU PUTIH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "JEJALENJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "DURI KOSAMBI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CAKUNG TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CAWANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "DURI KEPA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BATU AMPAR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIPINANG MUARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEDOYA UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "TANJUNG DUREN SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PULO GEBANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PANCORAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "TANJUNG DUREN UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "UTAN KAYU SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PEJATEN TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BIDARA CINA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "TENGAH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "BANGKA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SUNTER AGUNG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "TEGAL PARANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "BINTARO",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "WIJAYA KUSUMA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEMANGGISAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "PALMERAH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEDOYA SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KELAPA DUA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEMBANGAN UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "SUKABUMI UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "WANASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "JOGLO",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KEBON JERUK",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "SRENGSENG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "TANJUNG BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIPINANG BESAR SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "RAWA BUAYA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "LUBANGBUAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "DUREN TIGA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "GELORA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "MERUYA UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BALEKAMBANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIPINANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PAPANGGO",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "RAWA BADAK UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "RAWA BUNGA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "MERUYA SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "PEKOJAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "JELAMBAR BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KEBAYORAN LAMA SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "KOJA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GANDARIA SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PEJAGALAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KALIDERES",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "KEBON BAWANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "RAWA BADAK SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIKOKO",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KALIBATA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CILANDAK TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SUNTER JAYA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "TEGAL ALUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KAMAL",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PENGADEGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KLENDER",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIGANJUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "JAGAKARSA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SUNGAI BAMBU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PENGGILINGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "MAMPANG PRAPATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "KAPUK MUARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SATRIAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "SUKADAMI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "MUNJUL",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "MALAKA JAYA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIBUBUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PONDOK KELAPA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PETOGOGAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SUKAPURA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "MALAKA SARI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PONDOK LABU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "JATI PADANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIPAYUNG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SEMPER BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KEBON BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "PEGANGSAAN DUA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BAMBU APUS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "JELAMBAR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIPEDAK",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "SUKABUMI SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PEKAYON",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "ULUJAMI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "TUGU UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PASAR MANGGIS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIRACAS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "GUNTUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CIJANTUNG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "RAMBUTAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "MANGGARAI SELATAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BEKASI",
+    "NAME": "KEDUNG PENGAWAS",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "DUKUH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "CIPULIR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "SRENGSENG SAWAH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "DUREN SAWIT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KALISARI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "SLIPI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "BUKIT DURI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PULO GADUNG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "UJUNG MENTENG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "GEDONG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "KELAPA GADING TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "SEMPER TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "JEMBATAN BESI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "MENTENG ATAS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KEBON SIRIH",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "SETIA BUDI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KEBON KACANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KELAPA DUA WETAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA UTARA",
+    "NAME": "KELAPA GADING BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "GONDANGDIA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KWITANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "PEGANGSAAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KRAMAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PISANGAN TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "GLODOK",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "RAWAMANGUN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KENARI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "TOMANG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "UTAN KAYU UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "SUSUKAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "MAPHAR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KAYU MANIS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "PEJATEN BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "TANAH SEREAL",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "JATINEGARA KAUM",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "JATI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "JOHAR BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "GROGOL",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "HARAPAN MULIA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CILILITAN",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "CEMPAKA PUTIH BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "CILANGKAP",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KAMPUNG RAWA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "TANAH TINGGI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "CEMPAKA BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "MELONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "JATIPULO",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PISANGAN BARU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "CEMPAKA PUTIH TIMUR",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "CIDENG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "SELONG",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "SUMUR BATU",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "KEBON MANGGIS",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "PETOJO UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "BALI MESTER",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "RAWA BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA TIMUR",
+    "NAME": "PONDOK KOPI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "MEKAR JAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "MELAWAI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "DEPOK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA SELATAN",
+    "NAME": "KUNINGAN BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SUKMAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KAPUK",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "CENGKARENG BARAT",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "RANCAEKEK KENCANA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIGONDEWAH HILIR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA BARAT",
+    "NAME": "KOTA BAMBU UTARA",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISARANTEN BINA HARAPAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ANTAPANI TENGAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPADUNG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SEKEJATI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MEKAR JAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIJAURA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "KATAPANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SEKELOA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "PERWIRA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KEBON JERUK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "SERUA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "KEDAUNG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BURANGRANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KEBON PISANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CITARUM",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPADUNG KIDUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGERELENG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "WARUNG MUNCANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PALASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MALEBER",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIR BIRU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI SIKAMBING D",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "TURANGGA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "MARINDAL II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "SUKAMUKTI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "SERUA INDAH",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI SIKAMBING B",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIMPANG SELAYANG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "P BULAN SELAYANG I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KOTAMATSUM III",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "CIPAYUNG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PASAR MERAH BARAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEKIP",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "JATIHANDAP",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TELADAN BARAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "MERDEKA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPADUNG KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEMPAKATA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGAL SARI III",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "PATUMBAK KAMPUNG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SUDIREJO 1",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KARANG PAMULANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIBADUYUT WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGAL S MANDALA I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAPADA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "SAYATI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISARANTEN KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIBIRU HILIR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI PUTIH TIMUR I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "LENGKONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SILALAS",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TANJUNG REJO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TITI KUNING",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGALREJO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MALABAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "BABURA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SARIJADI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "MARENDAL I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISARANTEN ENDAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIGENDING",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ANTAPANI WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BABAKAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CARINGIN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "MADRAS HULU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "DUNGUS CARIANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "DARAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "CIPUTAT",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGAL S MANDALA III",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI PUTIH TIMUR II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BABAKAN CIPARAY",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PETISAH TENGAH",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "BOJONGMALAKA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PETISAH HULU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "GEMPOL SARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PANDAU HILIR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ANTAPANI KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIHAPIT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MEKAR MULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISEUREUH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "HEGARMANAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAMISKIN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KARASAK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "DENAI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIJAGRA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "DAGO",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PELINDUNG HEWAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "RANCANUMPANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KOTA MATSUM IV",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISARANTEN WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MANGGAHANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "BINJAI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MERDEKA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "SIDOMULYO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MARGAHAYU UTARA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SUNGGAL",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MALEER",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI PUTIH BARAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIRLAYUNG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDORAME BARAT I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SADANG SERANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI RENGAS I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "CANDI REJO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "MEDAN TENGGARA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "SIDODADI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI MATI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "GEGERKALONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPAGANTI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASANGGRAHAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIRLUYU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "HELVETIA TENGAH",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "SUKAMENAK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIKAWAO",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIUMBULEUIT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PAKEMITAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "ASAM KUMBANG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PAMOYANAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "PADASUKA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BABAKAN SARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAWARNA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "DWI KORA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIMENERANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PAHLAWAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PANGKALAN MANSUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BABAKAN SURABAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "CIWARUGA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PASAR MERAH TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PULO BERAYAN KOTA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "INDRA KASIH",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CISANTREN KIDUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "CINTA DAMAI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "GANDASARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MAGAHAYU SELATAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "GUMURUH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIR ENDAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "DELI TUA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "BANTAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "BUAHBATU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "BABURA SUNGGAL",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI SIKAMBING C II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIBIRU WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "SAWAH LAMA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PB BENGKEL BARU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDOMULYO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ARJUNA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "RANCABOLANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KOTA MATSUM I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDOREJO",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI AGUL",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "JOMBANG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "GARUDA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKAHAJI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGAL SARI II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "S. RENGAS PERMATA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIKADUT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI RENGAS II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDOREJO HILIR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SITUSAEUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASTEUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KEDAI DURIAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "TAMAN SARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MEKAR WANGI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KESAWAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "LEBAK GEDE",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TELADAN TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "LEBAK SILIWANGI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KOTA MATSUM II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "BANTAN TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SUKARAMAI I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MANDALAMEKAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "LINGKAR SELATAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEGAL SARI I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "PASIRKALIKI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PUNGKUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CINUNUK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "BOJONGLOA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "GLUGUR DARAT II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ISOLA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TANJUNGSARI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "TEMBUNG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "SUKARAJA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "P BERAYAN DARAT II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "LENGKONG KARYA",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "DELI TUA BARAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "TANIMULYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "LALANG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "SEKARWANGI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "P BULAN SELAYANG II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PUSAT PASAR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "CIPAGERAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KEBON LEGA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA ADM. JAKARTA PUSAT",
+    "NAME": "KARTINI",
+    "stateOrProvince": "DKI JAKARTA"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "PADASUKA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KACAPIRING",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "CITEUREUP",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KOPO",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "GLUGUR DARAT I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "LEUWIGAJAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "JELEKONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TEMBUNG",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "P BERAYAN DARAT I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "PONDOK BETUNG",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PERINTIS",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "BALEENDAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "GEDUNG JOHOR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CAMPAKA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "JURANGMANGU BARAT",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "MENGGER",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDORAME BARAT II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "HUSEIN SASTRANEGARA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "JATIENDAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA CIMAHI",
+    "NAME": "CIBABAT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SEI PUTIH TENGAH",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CILEUNYI KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PANDAU HULU I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIATEUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "JATI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIRANGRANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIROYOM",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIPADUNG WETAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "DURIAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDORAME TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "SARIWANGI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "KWALA SIMEME",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TANJUNG SELAMAT",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "MELATIWANGI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIBUNTU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "DELI TUA TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "CIHANJUANG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "KAMPUNG BARU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CICAHEUM",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SUKA MAJU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "ANDIR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PASIR IMPUN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "ANTAPANI KIDUL",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "LAGADAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "KEBON WARU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SUKARAMAI II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG BARAT",
+    "NAME": "GADOBANGKONG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "AMPLAS",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "HARJOSARI I",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "GIRIMEKAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "RANGKAPAN JAYA BARU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "BRAGA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BEKASI",
+    "NAME": "BINTARAJAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "MANGGA",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "MESJID",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SUKAMAJU BARU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "HELVETIA TIMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "NAMO GAJAH",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "HAMDAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "RANGKAPAN JAYA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SITIREJO III",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "HARJOSARI II",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIJERAH",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "SUKATANI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "CISALAK",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "TITI RANTE",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CANGKUANG KULON",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "PAJAJARAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "PADANG BULAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. BANDUNG",
+    "NAME": "CIBEUNYING",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA BANDUNG",
+    "NAME": "CIBADUYUT",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "CURUG",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "TANAH BARU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "BEJI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "BEJI TIMUR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA MEDAN",
+    "NAME": "SIDODADI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "PONDOK CINA",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "CISALAK PASAR",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "KUKUSAN",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "MEKARSARI",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "TUGU",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA DEPOK",
+    "NAME": "CINERE",
+    "stateOrProvince": "JAWA BARAT"
+  },
+  {
+    "city": "KOTA TANGERANG SELATAN",
+    "NAME": "BAMBUAPUS",
+    "stateOrProvince": "BANTEN"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TAWANGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MUKTIHARJO LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KUDU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MUKTIHARJO KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "CANDI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SEMBUNGHARJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "WONOTINGAL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGTURI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KRAPYAK",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MIROTO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGROTO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PEDURUNGAN TENGAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SAWAH BESAR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PANDEAN LAMPER",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BANJARDOWO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KLURAK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JATI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GEMAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANG KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TLOGOMAS",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PEDURUNGAN LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BUMIAYU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "WONODRI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SUMORAME",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "PISANGCANDI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SARIREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SAMBIBULU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "SAWOJAJAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SRONDOL WETAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PLOMBOKAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BRUMBUNGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "MOJOLANGU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "ROWOSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SIDODADI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEDATIGEDE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PALEBON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SAMBIREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MLATIHARJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TUNGGULWULUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "NGESREP",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BETRO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PRANTI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GAJAHMUNGKUR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TLOGOSARI KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TLOGOSARI WETAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GENUKSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SADENG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SAMPANGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "DADAPSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KASIN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KARANGBESUKI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PRASUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JOMBLANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BONGKARAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PINDRIKAN LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "PURWODADI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SAWAHAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "RUNGKUT KIDUL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KEPUTRAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KALIRUNGKUT",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PABEAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "LAMPER LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MANYAR SABRANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "ARJOWINANGUN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PANGGUNG LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GAYAMSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MANYARAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALIBANTENG KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "RANDUSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEKARDANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KLETEK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PLALANGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KUNINGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KALIJUDAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GUNUNG ANYAR TAMBAK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "PURWANTORO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "WIYUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "KENANGAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "CEMENGKALANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "NONGKOSAWIT",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PADANGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SEKARAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PANJANG JIWO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEMAMPIR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SIWALANPANJI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TEMBALANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DR. SOETOMO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SRONDOL KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MANUKAN WETAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GADING",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "LAMPER KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEPANJANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GEBANG PUTIH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PETERONGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BENDAN DHUWUR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SUKOREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GABAHAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "ASEM ROWO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAMBAKSUMUR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BALAS KLUMPRIK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PETOMPON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "LOWOKWARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PEKUNDEN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALIPANCUR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KEMBANGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "CEMOROKANDANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KALANGANYAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GISIKDRONO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PENGGARON KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SUKOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KEMBANGARUM",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TENGGULUNAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GEBANGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PANJUNAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "SUKUN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALISEGORO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TAMBAKREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "LEBO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "SUKA MAKMUR",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "WATES",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KEBOANANOM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PURWOYOSO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "WONOSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TANDANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "MADYOPURO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TAWANGMAS",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TAMBAKAJI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "JAGIR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BARENG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "WEDI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEPANDE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "MERJOSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MLATIBARU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PUCANG SEWU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TUNJUNGSEKAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "LEMPONGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SUMURREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PEDURUNGAN KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SIDOKEPUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SRUNI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "JEMUR WONOSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MULYOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "NGAGEL REJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGANYAR GUNUNG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "KEDAI DURIAN",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "GADANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KIDULDALEM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PEPE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BULU LOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BANYUMANIK",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PEDALANGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PAKINTELAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JEMUNDO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SADANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GONDORIYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KAUMAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALIBANTENG KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GUNDIH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SIDOKARE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PUCANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SUMOKALI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KARAH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BUGANGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BULUSAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PUDAKPAYUNG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BONGSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAMBAKSAWAH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KUTISARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TUGUREJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "MEKAR SARI",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUKUH KUPANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "RANGKAHKIDUL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "RANGKAH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SALAMANMLOYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KEDUNGMUNDU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BALONGSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "GROGOL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KETAWANGGEDE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "JATIMULYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALICARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BANGSRI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BENDAN NGISOR",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PENJARINGANSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BANYU URIP",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "GELAM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BLIMBING",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PANGGUNG KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MENUR PUMPUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "CANDI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JUMPUTREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "CEMENGBAKALAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SUMURBOTO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KOTALAMA",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PEKARUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BOJONGSALAMAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "NGALIYAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SURUH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KEJAWAAN PUTIH TAMBAK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TULUSREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GEDAWANG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEMAMBUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "TLOGOMULYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KETINTANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BANDUNGREJOSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "LAKARSANTRI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "REJOSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "NGEMPLAK SIMONGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "GILANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KROBOKAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PINDRIKAN KIDUL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUPAK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BULUSTALAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "KALISONGO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BANJARSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KALIGAWE",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KETEGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "MULYOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGAYU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PURWOSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "LANDUNGSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BEBEKAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAMBAKCEMANDI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "KENANGAN BARU",
+    "stateOrProvince": "SUMATERA UTARA"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BLURUKIDUL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PONGANGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SUKO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PLUMBUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MANGUNSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "MULYOAGUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PATEMON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "MANGLIAWAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PACARKEMBANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "RAMPALCELAKET",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SEMOLOWARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "CEPOKO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "NGIJO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KEPUHKIRIMAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MARGOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JERAKAH",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BANGETAYU WETAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TANJUNGREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "JERUK",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "SUMBERSEKAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TAMBAKREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KEDURUS",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BOHAR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "SEKARPURO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BURING",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PANDANSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "SAPTORENGGO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JANGLI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BARUSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "LESANPURO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KETABANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JIMBARANKULON",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BALONGGABUS",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "RUNGKUT MENANGGAL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JAGALAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JIMBARANWETAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "DAMARSI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BUNULREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BANJARBENDO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "JABUNGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BENDUNGAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KRAMAS",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "WADUNGASRI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PILANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "WONOKOYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SENDANGGUWO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PLAMONGANSARI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SUKODONO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KEBONSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUKUH SETRO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KLOJEN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KEDUNGKANDANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "SUMBERSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "CEMANDI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "PURWODINATAN",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "JAMBANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PRADAH KALIKENDAL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "GUNUNG SARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "GUNUNGPATI",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PERAK TIMUR",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BULUSIDOKARE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DUKUH SUTOREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA BATU",
+    "NAME": "DADAPREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "ORO-ORO DOWO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KETIMANG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "GADING KASRI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. MALANG",
+    "NAME": "ASRIKATON",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "DINOYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KETAJEN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "MOJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KEDUNGREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "PANDANWANGI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BAMBANKEREP",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "JEPARA",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PAGERWOJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "BANDULAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KERTAJAYA",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KENDANGSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KLOPOSEPULUH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KANDANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BANJARKEMANTREN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "SAMAAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SIMOMULYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "SEDATIAGUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PETEMON",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "URANGAGUNG",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "PLOSO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "KEMIRI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "BANGETAYU KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SIDOSERMO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "MERGOSONO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KEBONSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "SEKAYU",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "NGAGEL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "TROPODO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KEBONAGUNG",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "DUKUHTENGAH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "ANGGASWANGI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "PENANGGUNGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "LARANGAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "WEDORO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TANJUNGSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "MANGKANG KULON",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "KARANGTEMPEL",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "MAGERSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "WARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "AIRLANGGA",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SIMOMULYO BARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SEMARANG",
+    "NAME": "REJOMULYO",
+    "stateOrProvince": "JAWA TENGAH"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "MASANGANWETAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "BUNCITAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "LIDAH KULON",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PEPELEGI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BABATAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "ARJOSARI",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "PUCANGANOM",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "WONOKROMO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TLOGOWARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "TASIK MADU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. SIDOARJO",
+    "NAME": "WAGE",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "DARMO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TAMBAKREJO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "KAPASMADYA BARU",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "KESATRIAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "CIPTOMULYO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SIMOKERTO",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "TEMBOK DUKUH",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "BUBUTAN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA MALANG",
+    "NAME": "POLOWIJEN",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KOTA SURABAYA",
+    "NAME": "SUKOMANUNGGAL",
+    "stateOrProvince": "JAWA TIMUR"
+  },
+  {
+    "city": "KAB. DELI SERDANG",
+    "NAME": "BIRU-BIRU",
+    "stateOrProvince": "SUMATERA UTARA"
+  }
+]
