@@ -56,7 +56,7 @@ const Home = () => {
 
           <div className=''>
             {/* <h1 className='text-white'>MAP</h1> */}
-            <div className='w-full h-[calc(100vh-3.5rem)] overflow-hidden'>
+            <div className='w-full h-screen overflow-hidden'>
               {/* {session && <MapContainer toggle={toggle} />} */}
               <MapContainer />
             </div>
@@ -66,7 +66,9 @@ const Home = () => {
 
 
       </div>
-      <Menu />
+      <footer className='fixed bottom-0 w-full z-[999]'>
+        <Menu />
+      </footer>
     </div>
   )
 }

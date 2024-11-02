@@ -15,16 +15,9 @@ const MapContainer = () => {
 
 
   return (
-    <div>
-      <div className='flex justify-center font-bold'>
-        <h3 className='absolute top-40 flex items-center p-4 text-center rounded-xl shadow-md bg-gradient-to-br from from-white to-amtorange z-[998]'>
-          CHECK COVERAGE
-        </h3>
-{/* 
-        <div className='absolute top-[50%] left-4 w-12 h-12 rounded-full backdrop-blur-sm bg-amtorange/30 z-[998]'>
-          <p className='text-sm'>Location</p>
-        </div> */}
-      </div>
+    <div className='relative'>
+      <p className='absolute top-0'>asd</p>
+      
       <LocationToggle />
 
       <Map />
