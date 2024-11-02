@@ -30,7 +30,7 @@ const Header = () => {
 
 
   return (
-    <div className='topbar fixed flex justify-between items-center w-screen h-14 xs:h-14 sm:h-40'>
+    <div className='topbar fixed flex justify-between items-center w-screen h-14'>
       
       {/* LOGO */}
       <Link href="/" className='flex gap-1 items-center w-full p-2 z-20 text-2xl'>

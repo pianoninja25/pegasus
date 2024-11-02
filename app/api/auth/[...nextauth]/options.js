@@ -22,7 +22,7 @@ const options = {
       },
       async authorize(credentials) {
         try {
-          const [results, field] = await dbConnect('jatayu').query('SELECT username, password, client_name FROM users WHERE username = ?', [credentials.username])
+          const [results, field] = await dbConnect('pegasus').query('SELECT username, password, client_name FROM users WHERE username = ?', [credentials.username])
           if (results.length === 0) {
             return null
           }
@@ -39,7 +39,7 @@ const options = {
           console.error('Error occurred during authorization:', error)
           return null
         } finally {
-          dbConnect('jatayu').releaseConnection()
+          dbConnect('pegasus').releaseConnection()
         }
       }
     })
