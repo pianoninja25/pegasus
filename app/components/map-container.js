@@ -13,7 +13,7 @@ const Map = dynamic(() => import('./map'), { ssr: false });
 
 const MapContainer = () => {
 
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
   const { loading } = useGoogleMaps(apiKey); // Get loading state from the custom hook
 
   if (loading) {
