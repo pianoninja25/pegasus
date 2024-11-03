@@ -1,7 +1,7 @@
 import CredentialsProvider from "next-auth/providers/credentials"
 import crypto from 'crypto'
 
-import dbConnect from "@/utils/db-connection" 
+import dbConnect from "../../../../utils/db-connection" 
 
 
 const options = {

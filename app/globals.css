@@ -122,6 +122,8 @@
   cursor: col-resize;
 }
 
+
+
 /* antd Table */
 th.ant-table-cell {
   font: .7rem Quicksand !important;
@@ -151,14 +153,19 @@ th.ant-table-cell {
   font-family: Quicksand !important;
 }
 
-
-
 .ant-table-content {
   overflow-x: auto !important;
 }
 
 
-
+/* Antd Select */
 .ant-select-dropdown {
   z-index: 99999 !important;
+}
+
+
+
+
+.leaflet-control-attribution  {
+  display: none !important;
 }

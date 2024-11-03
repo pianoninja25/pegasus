@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react';
 
-const Header = () => {
+const Header = ({ user }) => {
 
   const [open, setOpen] = useState(false);
   const menuRef = useRef();
@@ -37,7 +37,7 @@ const Header = () => {
         <div className='w-[12vw] xs:w-[2em] rounded-full sm:mx-16 sm:bg-black sm:border-4 sm:border-slate-400'>
           <Image className="w-auto h-auto p-[.4em] drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={30} height={30} loading="lazy" />
         </div>
-        <h1 className="text-nowrap text-[4.5vw] text-white xs:text-lg sm:hidden drop-shadow-sm">Dankom</h1>
+        <h1 className="text-nowrap text-[4.5vw] text-white xs:text-lg sm:hidden drop-shadow-sm">{user}</h1>
 
       </Link>
 
