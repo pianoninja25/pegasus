@@ -5,22 +5,12 @@ import dynamic from 'next/dynamic';
 import { useEffect, useState } from 'react';
 import LocationToggle from '../components/toggle2';
 import GoogleMaps from '../components/googlemap';
-import useGoogleMaps from './test';
 
 
 const Map = dynamic(() => import('./map'), { ssr: false });
 
 
 const MapContainer = () => {
-
-  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
-  const { loading } = useGoogleMaps(apiKey); // Get loading state from the custom hook
-
-  if (loading) {
-    return <div>Loading Google Maps...</div>; // Optionally render a loading message
-  }
-
-
   return (
     <div className='relative'>
       <div className='flex justify-center font-bold'>
