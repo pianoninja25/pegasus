@@ -17,7 +17,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
   ]
 
   return (
-    <div className="fixed grid justify-center w-full mt-[10%] z-50"> {/* Horizontal centering */}
+    <div className="fixed grid justify-center w-full mt-[20%] z-50"> {/* Horizontal centering */}
       <div className="relative flex gap-8 w-fit p-1 px-4 rounded-t-lg backdrop-blur-lg border-2 border-b-0 border-white bg-amtblue/20">
         <div
           className={`absolute top-0 left-0 w-1/2 h-full bg-amtblue/50 transition-all duration-300 ${

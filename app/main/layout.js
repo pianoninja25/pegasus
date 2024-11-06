@@ -19,9 +19,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased font-quicksand">
         <AuthProvider>
           <Header user={'Dankom'} />
-          <main className='mt-14'>
             {children}
-          </main>
           <footer className='fixed bottom-0 w-full z-[999]'><MenuBottom /></footer>
         </AuthProvider>
 
