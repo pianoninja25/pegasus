@@ -17,10 +17,10 @@
 
 
 .topbar {
-  @apply z-[99999] top-0 bg-amtblue/75;
+  @apply z-[99999] top-0 backdrop-blur-sm bg-amtblue/75;
 }
 .topbar::before {
-  @apply absolute top-0 h-full w-full bg-amtblue/75;
+  @apply absolute top-0 h-full w-full backdrop-blur-sm bg-amtblue/75;
   content: '';
 }
 
@@ -167,5 +167,12 @@ th.ant-table-cell {
 
 
 .leaflet-control-attribution  {
+  display: none !important;
+}
+
+
+
+
+.gm-style-mtc > button {
   display: none !important;
 }

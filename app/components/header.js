@@ -34,7 +34,7 @@ const Header = ({ user }) => {
       
       {/* LOGO */}
       <Link href="/" className='flex gap-1 items-center w-full p-2 z-20 text-2xl'>
-        <div className='w-[12vw] xs:w-[2em] rounded-full sm:mx-16 sm:bg-black sm:border-4 sm:border-slate-400'>
+        <div className='w-[12vw] xs:w-[2em] rounded-full'>
           <Image className="w-auto h-auto p-[.4em] drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={30} height={30} loading="lazy" />
         </div>
         <h1 className="text-nowrap text-[4.5vw] text-white xs:text-lg sm:hidden drop-shadow-sm">{user}</h1>

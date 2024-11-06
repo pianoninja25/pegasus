@@ -1,9 +1,12 @@
 'use client'
 
-import { Button, Select } from 'antd';
 import { useState } from 'react';
+import { Button, Select } from 'antd';
+import { Input } from 'antd';
+import { Autocomplete } from '@react-google-maps/api';
+const { Search } = Input;
 
-const LocationToggle = () => {
+const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => {
   const [toggle, setToggle] = useState('location');
   const [region, setRegion] = useState('')
   const regionList = [
@@ -15,7 +18,7 @@ const LocationToggle = () => {
   ]
 
   return (
-    <div className="fixed grid justify-center w-full mt-[18vh] z-[9999]"> {/* Horizontal centering */}
+    <div className="fixed grid justify-center w-full mt-[18vh] z-50"> {/* Horizontal centering */}
       <div className="relative flex gap-8 w-fit p-1 px-4 rounded-t-lg backdrop-blur-lg border-2 border-b-0 border-white bg-amtblue/20">
         <div
           className={`absolute top-0 left-0 w-1/2 h-full bg-amtblue/50 transition-all duration-300 ${
@@ -46,8 +49,14 @@ const LocationToggle = () => {
       <div className='relative w-[227.2px] h-fit p-2 shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
         
         {/* FIND LOCATION */}
-        {toggle === 'location' && (
+        {toggle === 'location' && isGoogleLoaded && (
           <div className='grid p-2'>
+            <Autocomplete
+              onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
+              onPlaceChanged={onPlaceChanged}
+            >
+              <Search placeholder="Find Location"  />
+            </Autocomplete>
             <button className='place-self-center w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
           </div>
         )}
