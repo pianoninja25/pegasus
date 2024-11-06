@@ -66,6 +66,7 @@ const MapContainer = () => {
           isGoogleLoaded={isGoogleLoaded} 
           autocompleteRef={autocompleteRef} 
           onPlaceChanged={onPlaceChanged} 
+          onEN
         />
         <GoogleMaps 
           center={center} 

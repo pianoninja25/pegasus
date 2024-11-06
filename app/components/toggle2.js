@@ -18,7 +18,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
   ]
 
   return (
-    <div className="fixed grid justify-center w-full mt-[18vh] z-50"> {/* Horizontal centering */}
+    <div className="fixed grid justify-center w-full mt-[10%] z-50"> {/* Horizontal centering */}
       <div className="relative flex gap-8 w-fit p-1 px-4 rounded-t-lg backdrop-blur-lg border-2 border-b-0 border-white bg-amtblue/20">
         <div
           className={`absolute top-0 left-0 w-1/2 h-full bg-amtblue/50 transition-all duration-300 ${
@@ -27,7 +27,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
         />
         <button
           onClick={() => setToggle('location')}
-          className={`w-20 text-center text-sm z-10 transition-colors duration-300 ${
+          className={`w-32 p-1 text-center text-sm z-10 transition-colors duration-300 ${
             toggle === 'location' ? 'text-white font-bold' : 'text-gray-500'
           }`}
         >
@@ -35,7 +35,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
         </button>
         <button
           onClick={() => setToggle('address')}
-          className={`w-20 text-center text-sm z-10 transition-colors duration-300 ${
+          className={`w-32 p-1 text-center text-sm z-10 transition-colors duration-300 ${
             toggle === 'address' ? 'text-white font-bold' : 'text-gray-500'
           }`}
         >
@@ -46,7 +46,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
 
 
 
-      <div className='relative w-[227.2px] h-fit p-2 shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
+      <div className='relative w-[323px] h-fit p-2 -mt-1 shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
         
         {/* FIND LOCATION */}
         {toggle === 'location' && isGoogleLoaded && (
@@ -54,10 +54,14 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
             <Autocomplete
               onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
               onPlaceChanged={onPlaceChanged}
+              restrictions={{ country: 'ID' }}
             >
-              <Search placeholder="Find Location"  />
+              <Search placeholder="Find Location" className='h-10' />
             </Autocomplete>
-            <button className='place-self-center w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
+            <div className='flex justify-between mt-4'>
+              <button className='place-self-start w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
+              <button className='place-self-start w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-green-500'>Check Coverage </button>
+            </div>
           </div>
         )}
 
