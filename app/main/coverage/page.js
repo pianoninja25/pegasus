@@ -60,7 +60,7 @@ const MapContainer = () => {
 
   
   return (
-    <div className="relative overflow-scroll">
+    <div className="relative my-14">
       <LocationToggle 
         isGoogleLoaded={isGoogleLoaded} 
         autocompleteRef={autocompleteRef} 
