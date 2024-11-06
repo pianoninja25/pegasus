@@ -45,7 +45,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
 
 
 
-      <div className='relative w-[323.2px] h-fit p-2  shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
+      <div className='relative w-[324px] h-fit p-2  shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
         
         {/* FIND LOCATION */}
         {toggle === 'location' && isGoogleLoaded && (

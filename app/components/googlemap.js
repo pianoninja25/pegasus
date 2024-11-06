@@ -6,7 +6,7 @@ const libraries = ['places']; // Define libraries outside the component
 const GoogleMapComponent = ({ center, markerPosition, onMarkerDragEnd, onLoad }) => {
   const mapContainerStyle = {
     width: '100%',
-    height: '70vh',
+    height: '100vh',
   };
 
   // Load Google Maps script
