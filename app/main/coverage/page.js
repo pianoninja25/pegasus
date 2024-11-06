@@ -44,7 +44,7 @@ const CheckCoverage = () => {
 
           <div className=''>
             {/* <h1 className='text-white'>MAP</h1> */}
-            <div className='w-full h-screen'>
+            <div className='w-full h-screen overflow-hidden'>
               {/* {session && <MapContainer toggle={toggle} />} */}
               <MapContainer />
             </div>
