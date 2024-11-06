@@ -59,8 +59,8 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
               <Search placeholder="Find Location" className='h-10' />
             </Autocomplete>
             <div className='flex justify-between mt-4'>
-              <button className='place-self-start w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
-              <button className='place-self-start w-fit px-4 py-1 rounded-md shadow-md text-sm text-center text-white bg-green-500'>Check Coverage </button>
+              <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
+              <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-green-500'>Check Coverage </button>
             </div>
           </div>
         )}
