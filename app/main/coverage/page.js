@@ -60,7 +60,7 @@ const MapContainer = () => {
 
   
   return (
-    <div className="relative h-screen">
+    <div className="relative h-[90vh] overflow-hidden">
       <LocationToggle 
         isGoogleLoaded={isGoogleLoaded} 
         autocompleteRef={autocompleteRef} 
