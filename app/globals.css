@@ -176,9 +176,13 @@ th.ant-table-cell {
 .gm-control-active, .gm-fullscreen-control {
   display: none !important;
 }
+.gmnoprint {
+  display: none !important;
+}
 
 
 /* Leaflet Maps */
 .leaflet-control-attribution  {
   display: none !important;
 }
+

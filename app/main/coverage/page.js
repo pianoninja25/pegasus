@@ -17,7 +17,7 @@ const CheckCoverage = () => {
 
   return (
     <div className='flex flex-col font-quicksand'>
-      <div className='w-full h-full grid bg-gradient-to-b from-amtblue/80 via-amtblue to-black'>
+      <div className='w-full h-full bg-gradient-to-b from-amtblue/80 via-amtblue to-black'>
         
         
 
@@ -44,7 +44,7 @@ const CheckCoverage = () => {
 
           <div className=''>
             {/* <h1 className='text-white'>MAP</h1> */}
-            <div className='w-full h-screen overflow-hidden'>
+            <div className='w-full h-screen'>
               {/* {session && <MapContainer toggle={toggle} />} */}
               <MapContainer />
             </div>

@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { Button, Select } from 'antd';
 import { Input } from 'antd';
 import { Autocomplete } from '@react-google-maps/api';
-const { Search } = Input;
 
 const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => {
   const [toggle, setToggle] = useState('location');
@@ -46,7 +45,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
 
 
 
-      <div className='relative w-[323.2px] h-fit p-2 -mt-1 shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
+      <div className='relative w-[323.2px] h-fit p-2  shadow-lg rounded-b-md backdrop-blur-md border-2 border-t-0 border-white bg-amtblue/20'>
         
         {/* FIND LOCATION */}
         {toggle === 'location' && isGoogleLoaded && (
@@ -56,7 +55,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
               onPlaceChanged={onPlaceChanged}
               restrictions={{ country: 'ID' }}
             >
-              <Search placeholder="Find Location" className='h-10' />
+              <Input placeholder="Find Location" className='h-8' />
             </Autocomplete>
             <div className='flex justify-between mt-4'>
               <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>

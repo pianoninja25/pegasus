@@ -61,7 +61,7 @@ const MapContainer = () => {
   
   return (
     <div className='relative'>
-      <div className="relative mt-12">
+      <div className="relative">
         <LocationToggle 
           isGoogleLoaded={isGoogleLoaded} 
           autocompleteRef={autocompleteRef} 
