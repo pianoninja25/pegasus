@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 
 import { PiMapPinAreaFill } from "react-icons/pi";
-import { FaUserPlus, FaUserCheck, FaHourglassHalf } from "react-icons/fa"
+import { LuCalendarCheck } from "react-icons/lu";
 import { IoTicket } from "react-icons/io5";
 import { PiSirenFill } from "react-icons/pi";
 
@@ -22,8 +22,8 @@ const MenuBottom = () => {
       </button>
       <span className="w-[.5px] h-10 bg-slate-400" />
       <button className="grid place-items-center gap-1 pt-0.5 w-1/4" onClick={() => handleNavigation('/main/workorder')}>
-        <FaUserPlus size={22} color="#94a3b8" />
-        <p className="text-xs">Installation</p>
+        <LuCalendarCheck size={22} color="#94a3b8" />
+        <p className="text-xs">Workorder</p>
       </button>
       <span className="w-[.5px] h-10 bg-slate-400" />
       <button className="grid place-items-center gap-1 pt-0.5 w-1/4" onClick={() => handleNavigation('/main/ticketing')}>

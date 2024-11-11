@@ -1,8 +1,10 @@
 'use client'
 
+import { signOut } from 'next-auth/react';
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react';
+import { IoLogOut } from 'react-icons/io5';
 
 const Header = ({ user }) => {
 
@@ -30,14 +32,14 @@ const Header = ({ user }) => {
 
 
   return (
-    <div className='topbar fixed flex justify-between items-center w-screen h-14 z-[9999]'>
+    <div className='fixed flex justify-between items-center w-screen h-14 bg-amtblue z-[999]'>
       
       {/* LOGO */}
-      <Link href="/" className='flex gap-1 items-center w-full p-2 z-20 text-2xl'>
-        <div className='w-[12vw] xs:w-[2em] rounded-full'>
+      <Link href="/" className='flex gap-1 items-center h-fit text-2xl z-20'>
+        <div className='w-12 sm:w-14 rounded-full'>
           <Image className="w-auto h-auto p-[.4em] drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={30} height={30} loading="lazy" />
         </div>
-        <h1 className="text-nowrap text-[4.5vw] text-white xs:text-lg sm:hidden drop-shadow-sm">{user}</h1>
+        <h1 className="text-nowrap text-sm sm:text-base text-white drop-shadow-sm">{user}</h1>
 
       </Link>
 
@@ -47,7 +49,7 @@ const Header = ({ user }) => {
       <div ref={menuRef}>
         {/* HAMBURGER */}
         <button onClick={() => setOpen(!open)} 
-        className="absolute top-0 p-2 xs:p-3 right-2 z-50 sm:hidden scale-75 xs:scale-100"
+        className={`absolute top-0 p-2 right-2 z-50 scale-75 sm:hidden`}
         >
           <span className={`hamburger-line transition duration-300 ease-in-out origin-top-left ${open ? 'rotate-[40deg]' : ''}`}></span>
           <span className={`hamburger-line transition duration-300 ease-in-out ${open ? 'scale-0' : ''}`}></span>
@@ -59,25 +61,32 @@ const Header = ({ user }) => {
 
         {/* TEXT */}
         <nav
-          className={`absolute top-14 right-4 py-2 flex-col w-full max-w-40 rounded-md shadow-md bg-white/30 backdrop-blur-md 
-          sm:flex-row sm:max-w-xs sm:justify-center sm:left-24 sm:p-0 sm:rounded-full sm:border-4 sm:border-slate-400 
-          lg:top-14   
-          ${open ? 'flex' : 'hidden sm:flex'}`}
+          className={`absolute top-2 right-4 flex-col sm:items-center gap-1.5 w-full max-w-40 h-fit pt-8 pb-4 rounded-md shadow-md backdrop-blur-md bg-white/80 
+          sm:flex-row sm:justify-center sm:right-40 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-transparent
+          ${open ? 'flex' : 'hidden sm:flex mr-10'}`}
         >
           {[
-            ['Home', '/'],
-            ['Ticket', '/ticket'],
+            ['Coverage', '/'],
             ['Workorder', '/workorder'],
-            ['Mass Outage', '/massoutage'],
+            ['Ticketing', '/ticket'],
+            ['Outage', '/massoutage'],
           ].map(([title, url]) => (
             <a
               key={title}
               href={url}
-              className={`text-md px-4 p-1 rounded-md text-black font-lobster ${title=='Home' ? ' sm:hidden' :''} hover:text-orange hover:scale-110 lg:text-xl`}
+              className={`px-4 py-0.5 rounded-md sm:text-white hover:text-orange hover:scale-110`}
             >
               { title }
             </a>
           ))}
+
+          <button 
+            onClick={() => signOut()} 
+            className='flex items-center justify-around gap-2 w-fit h-fit px-4 py-1 font-bold text-amtorange hover:scale-110'
+          >
+            Logout 
+            <IoLogOut size={20} />
+          </button>
         </nav>
       </div>
       

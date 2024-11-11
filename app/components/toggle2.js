@@ -1,13 +1,34 @@
 'use client'
 
 import { useState } from 'react';
-import { Button, Select } from 'antd';
+import { Button, Select, Spin } from 'antd';
 import { Input } from 'antd';
 import { Autocomplete } from '@react-google-maps/api';
+import { AiOutlineLoading } from "react-icons/ai";
 
-const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => {
+const LocationToggle = ({ 
+  isGoogleLoaded, 
+  autocompleteRef, 
+  onPlaceChanged, 
+  onCheckCoverage,
+  onKeyDown,
+  address,
+  setAddress,
+  loading
+}) => {
   const [toggle, setToggle] = useState('location');
   const [region, setRegion] = useState('')
+  
+  const autocompleteOptions = {
+    bounds: {
+      north: 6.2745,
+      south: -11.0083,
+      east: 141.0218,
+      west: 94.9117,
+    },
+    strictBounds: true,
+  };
+
   const regionList = [
     { name: 'JBRO', value: 'JBRO'},
     { name: 'KSMP', value: 'KSMP'},
@@ -17,7 +38,7 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
   ]
 
   return (
-    <div className="fixed grid justify-center w-full mt-[20%] z-50"> {/* Horizontal centering */}
+    <div className="fixed left-1/2 transform -translate-x-1/2 w-fit mt-[20%] sm:mt-[5%] z-50"> {/* Horizontal centering */}
       <div className="relative flex gap-8 w-fit p-1 px-4 rounded-t-lg backdrop-blur-lg border-2 border-b-0 border-white bg-amtblue/20">
         <div
           className={`absolute top-0 left-0 w-1/2 h-full bg-amtblue/50 transition-all duration-300 ${
@@ -55,11 +76,17 @@ const LocationToggle = ({ isGoogleLoaded, autocompleteRef, onPlaceChanged }) => 
               onPlaceChanged={onPlaceChanged}
               restrictions={{ country: 'ID' }}
             >
-              <Input placeholder="Find Location" className='h-8' />
+              <Input placeholder="Find Location" className='h-8' options={autocompleteOptions} value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={onKeyDown} />
             </Autocomplete>
             <div className='flex justify-between mt-4'>
               <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
-              <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-green-500'>Check Coverage </button>
+              <button 
+                onClick={onCheckCoverage}
+                disabled={loading}
+                className='relative place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-green-500 disabled:text-stone-300 disabled:cursor-not-allowed'
+              >
+                Check Coverage {loading ? <Spin indicator={<AiOutlineLoading />} size="small" className='absolute left-[45%] top-3 animate-spin' /> : ''}
+              </button>
             </div>
           </div>
         )}
