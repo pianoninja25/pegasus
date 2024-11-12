@@ -148,7 +148,6 @@ const MapContainer = () => {
       } else {
         message.warning('Area Not Covered!');
       }
-      console.log(fatidList)
     } catch (error) {
       console.error('Error fetching data:', error);
       message.error('An error occurred while fetching data.');
@@ -169,7 +168,6 @@ const MapContainer = () => {
         const data = await response.json();
         if (data.length>0) {
           message.success({ content: `Homepass available ${data[0].id} - ${data[0].type}` });
-          console.log('Data found:', data);
           return data;
         } else {
           message.warning({ content: `Homepass not available` });
