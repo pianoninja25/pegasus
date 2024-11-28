@@ -397,7 +397,7 @@ const WorkOrder = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://127.0.0.1:8002/orders?client_name=${encodeURIComponent(session.user.name)}`
+          `${process.env.NEXTAUTH_URL}:8002/orders?client_name=${encodeURIComponent(session.user.name)}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
