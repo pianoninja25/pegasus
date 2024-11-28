@@ -34,7 +34,7 @@ const Ticketing = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `${process.env.NEXTAUTH_URL}:8002/tickets?client_name=${encodeURIComponent(session.user.name)}`
+          `${process.env.NEXT_PUBLIC_API_URL}:8002/tickets?client_name=${encodeURIComponent(session.user.name)}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
