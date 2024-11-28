@@ -65,7 +65,7 @@ const Header = ({ user }) => {
         {/* TEXT */}
         <nav
           className={`absolute top-2 right-4 flex-col sm:items-center gap-1 w-full max-w-40 h-fit pt-6 pb-6 rounded-md shadow-md backdrop-blur-md bg-gradient-to-b from-white/75 to-white/5 
-          sm:flex-row sm:justify-center sm:right-40 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-transparent
+          sm:flex-row sm:justify-center sm:right-44 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
           ${open ? 'flex' : 'hidden sm:flex mr-10'}`}
         >
           {[
@@ -78,7 +78,7 @@ const Header = ({ user }) => {
               key={title}
               href={url}
               // className={`px-4 py-0.5 rounded-md sm:text-white text-sm hover:text-orange hover:scale-110`}
-              className={`text-sm px-6 p-1 font-montserrat font-semibold rounded-md drop-shadow-md text-amtblue hover:text-orange hover:scale-110 
+              className={`text-xs px-6 sm:px-4 p-1 font-montserrat font-semibold rounded-md drop-shadow-md text-amtblue sm:text-slate-200 hover:text-orange hover:scale-110 
                 ${url==pathname ? '!text-amtorange' :''}`
               }
             >
@@ -99,7 +99,7 @@ const Header = ({ user }) => {
 
           <button 
             onClick={() => signOut()} 
-            className='flex items-center justify-around gap-2 w-fit h-fit px-6 py-1 text-sm font-bold drop-shadow-md text-amtblue hover:scale-110'
+            className='flex items-center justify-around gap-2 w-fit h-fit px-6 py-1 text-xs font-bold drop-shadow-md text-amtblue sm:text-slate-200 hover:scale-110'
           >
             Logout 
             <IoLogOut size={20} />
