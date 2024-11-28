@@ -93,7 +93,7 @@ const Ticketing = () => {
   };
   const statusCounts = datas?.reduce(
     (acc, item) => {
-      acc[item.status] = (acc[item.status] || 0) + 1;
+      acc[item.ticket_status] = (acc[item.ticket_status] || 0) + 1;
       acc['All'] += 1;
       return acc;
     },
