@@ -20,7 +20,6 @@ export async function GET(req) {
     q = `CALL sample_client_sitelist('${pclient}');`;
   }
 
-  console.log(q);
 
   const session = await getServerSession(options);
   if (!session) {
