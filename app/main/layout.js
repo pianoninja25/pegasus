@@ -19,7 +19,12 @@ export default function RootLayout({ children }) {
         <AuthProvider>
           <Header user={session?.user.name} />
             {children}
-          <footer className='fixed bottom-0 w-full z-[999] sm:hidden'><MenuBottom /></footer>
+          <footer className='fixed bottom-0 w-full z-[999] sm:hidden'>
+            <MenuBottom />
+            <div className='absolute bottom-10 right-4 flex justify-center items-center w-6 h-6 p-1 rounded-full text-white bg-amtred animate-bounce'>
+              <span>1</span>
+            </div>
+          </footer>
         </AuthProvider>
 
       </body>
