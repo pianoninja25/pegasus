@@ -28,7 +28,7 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
   };
 
   const createTicket = async (token, formData) => {
-    const response = await fetch('http://localhost:8003/create_ticket', {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/create_ticket`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
