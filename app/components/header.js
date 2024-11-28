@@ -39,8 +39,8 @@ const Header = ({ user }) => {
       
       {/* LOGO */}
       <Link href="/" className='flex gap-1 items-center h-fit text-2xl z-20'>
-        <div className='w-12 sm:w-14 rounded-full'>
-          <Image className="w-auto h-auto p-[.4em] drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={30} height={30} loading="lazy" />
+        <div className='w-10 sm:w-14 ml-4 rounded-full'>
+          <Image className="w-auto h-auto p-1.5 sm:p-3 drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={20} height={20} loading="lazy" />
         </div>
         <h1 className="text-nowrap text-sm sm:text-base text-white drop-shadow-sm">{user}</h1>
 
@@ -65,7 +65,7 @@ const Header = ({ user }) => {
         {/* TEXT */}
         <nav
           className={`absolute top-2 right-4 flex-col sm:items-center gap-1 w-full max-w-40 h-fit pt-6 pb-6 rounded-md shadow-md backdrop-blur-md bg-gradient-to-b from-white/75 to-white/5 
-          sm:flex-row sm:justify-center sm:right-44 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
+          sm:flex-row sm:justify-center sm:right-32 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
           ${open ? 'flex' : 'hidden sm:flex mr-10'}`}
         >
           {[

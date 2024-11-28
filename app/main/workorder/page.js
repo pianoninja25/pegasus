@@ -397,7 +397,7 @@ const WorkOrder = () => {
       try {
         setLoading(true);
         const response = await fetch(
-          `http://127.0.0.1:8000/orders?client_name=${encodeURIComponent(session.user.name)}`
+          `http://127.0.0.1:8002/orders?client_name=${encodeURIComponent(session.user.name)}`
         );
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
@@ -441,9 +441,9 @@ const WorkOrder = () => {
 
   return (
     <div className='min-h-screen pt-20 bg-slate-100 pb-20'>
-      <div className={!session || loading ? 'loading' : ''} />
       {!isDesktop && datas.length>=0 && (
-        <div>
+        <div className='sm:hidden'>
+          <div className={!session || loading ? 'loading' : ''} />
           <Filter {...{ handleSearchChange, statusFilter, setStatusFilter, statusCounts }} />
           {filteredData?.map((a, idx) => (
             <Card key={idx} datas={a} />
@@ -452,7 +452,8 @@ const WorkOrder = () => {
         </div>
       )}
 
-      {isDesktop && <div className='relative min-h-40 m-10 mt-2 mb-4 p-8 pb-0 shadow-sm rounded-xl bg-white'>
+      {isDesktop && <div className='relative min-h-80 m-10 mt-2 mb-4 p-8 pb-0 shadow-sm rounded-xl bg-white'>
+        <div className={!session || loading ? 'loading' : ''} />
         {!loading && <Tables datas={datas} />}
       </div>}
     </div>

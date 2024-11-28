@@ -28,7 +28,7 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
   };
 
   const createTicket = async (token, formData) => {
-    const response = await fetch('http://localhost:8002/create_ticket', {
+    const response = await fetch('http://localhost:8003/create_ticket', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,8 +50,6 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
       setLoading(true);
       const values = await form.validateFields();
   
-      form.resetFields();
-  
       const username = user;
       const password = 'ioh456#';
       const token = await getToken(username, password);
@@ -65,8 +63,9 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
       console.error('Error:', error);
       message.error('Ticket Creation Failed! There was an issue while creating the ticket. Please try again.');
     } finally {
-    setLoading(false);
-  }
+      form.resetFields();
+      setLoading(false);
+    }
   };
   
   // const handleOk = () => {
