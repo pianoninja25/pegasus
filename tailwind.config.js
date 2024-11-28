@@ -19,7 +19,7 @@ module.exports = {
         amtred: '#ff0000',
       },
       boxShadow: {
-        'white-md': '0 2px 4px 2px rgba(255, 255, 255, .1), 0 2px 4px 6px rgba(0, 0, 0, .2)',
+        whiteMd: '0 2px 4px 2px rgba(255, 255, 255, .1), 0 2px 4px 6px rgba(0, 0, 0, .2)',
       },
       animation: {
         slowBounce: 'bounce 4s infinite',

@@ -13,20 +13,20 @@ const Map = () => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           setPosition({
-            lat: -6.877660,
-            lng: 106.776413,
+            lat: -6.2178649,
+            lng: 106.8293705,
           });
         },
         (error) => {
           console.error("Error getting location:", error);
           // You can set a default position here if needed
-          setPosition({ lat: -6.877660, lng: 106.776413 }); 
+          setPosition({ lat: -6.2178649, lng: 106.8293705 }); 
         }
       );
     } else {
       console.error("Geolocation is not supported by this browser.");
       // Set a default position if Geolocation is not supported
-      setPosition({ lat: -6.877660, lng: 106.776413 }); 
+      setPosition({ lat: -6.2178649, lng: 106.8293705 }); 
     }
   }, []);
 
@@ -34,7 +34,7 @@ const Map = () => {
   return (
     <div className="h-screen w-screen">
       <MapContainer
-        center={[-6.877660, 106.776413]}
+        center={[-6.2178649, 106.8293705]}
         zoom={20}
         zoomControl={false}
         style={{ width: '100%', height: '100%' }}
@@ -43,7 +43,7 @@ const Map = () => {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <Marker 
-          position={[-6.877660, 106.776413]}
+          position={[-6.2178649, 106.8293705]}
           draggable={true}
         >
           <Popup>Your Location</Popup>

@@ -1,6 +1,6 @@
 import { getServerSession } from "next-auth/next";
 import options from '../auth/[...nextauth]/options';
-import OperationDB from "@/utils/db-connection"; 
+import dbConnect from "@/utils/db-connection"; 
 
 export async function GET(req) {
   const pquery = req.nextUrl.searchParams.get("query");
@@ -30,14 +30,14 @@ export async function GET(req) {
   if (pquery) {
     let conn;
     try {
-      conn = await OperationDB('pegasus').getConnection();
+      conn = await dbConnect('pegasus').getConnection();
       const [rows] = await conn.query(q);
       return new Response(JSON.stringify(rows[0] || rows), { status: 200 });
     } catch (error) {
       console.error('Error querying database:', error);
       return new Response('Internal Server Error', { status: 500 });
     } finally {
-      OperationDB('pegasus').releaseConnection()
+      dbConnect('pegasus').releaseConnection()
     }
   } else {
     return new Response('404 | This page could not be found.', { status: 404 });

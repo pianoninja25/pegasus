@@ -72,14 +72,27 @@ const LocationToggle = ({
         {toggle === 'location' && isGoogleLoaded && (
           <div className='grid p-2'>
             <Autocomplete
-              onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
-              onPlaceChanged={onPlaceChanged}
+              // onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
+              // onPlaceChanged={onPlaceChanged}
               restrictions={{ country: 'ID' }}
             >
-              <Input placeholder="Find Location" className='h-8' options={autocompleteOptions} value={address} onChange={(e) => setAddress(e.target.value)} onKeyDown={onKeyDown} />
+              <Input 
+                placeholder="Find Location" 
+                className='h-8' 
+                options={autocompleteOptions} 
+                value={address} 
+                onChange={(e) => setAddress(e.target.value)} 
+                onKeyDown={onKeyDown} 
+                allowClear
+              />
             </Autocomplete>
             <div className='flex justify-between mt-4'>
-              <button className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-amtorange'>Find Location </button>
+              <button 
+                className='place-self-start w-fit px-4 py-2 rounded-md shadow-md text-sm text-center text-white bg-amtorange'
+                onClick={onPlaceChanged}
+              >
+                Find Location 
+              </button>
               <button 
                 onClick={onCheckCoverage}
                 disabled={loading}

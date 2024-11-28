@@ -6,6 +6,7 @@ import LocationToggle from '../../components/toggle2';
 import GoogleMaps from '../../components/googlemap';
 import { message } from 'antd';
 import { useSession } from 'next-auth/react';
+import Modal from '@/app/components/modal';
 
 
 const MapContainer = () => {
@@ -18,7 +19,11 @@ const MapContainer = () => {
 
   const [sampleFAT, setSampleFAT] = useState([])
   const [address, setAddress] = useState('')
+  const [homepass, setHomepass] = useState('')
   const [loading, setLoading] = useState(false)
+
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   
   // Get GPS current position
@@ -167,7 +172,10 @@ const MapContainer = () => {
         }
         const data = await response.json();
         if (data.length>0) {
-          message.success({ content: `Homepass available ${data[0].id} - ${data[0].type}` });
+          console.log(data)
+          // message.success({ content: `Homepass available ${data[0].id} - ${data[0].type}` });
+          setHomepass(data[0])
+          setIsModalOpen(true)
           return data;
         } else {
           message.warning({ content: `Homepass not available` });
@@ -181,7 +189,8 @@ const MapContainer = () => {
   };
   
   return (
-    <div className="relative h-[90vh] overflow-hidden">
+    <div className="relative h-lvh overflow-hidden">
+      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} datas={homepass} />
       <LocationToggle 
         isGoogleLoaded={isGoogleLoaded} 
         autocompleteRef={autocompleteRef} 

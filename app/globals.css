@@ -115,6 +115,11 @@
 
 
 
+.wo-table td {
+  @apply w-full text-xs px-4 py-2 border-b border-slate-200;
+}
+
+
 /* antd Table */
 th.ant-table-cell {
   font: .7rem Quicksand !important;
@@ -154,8 +159,10 @@ th.ant-table-cell {
 
 
 
-
-
+/* Antd Form */
+.ant-modal-title, .ant-form-item-label, .ant-input, .ant-form-item-explain-error, .ant-form-item-control-input-content>p {
+  @apply !font-quicksand;
+}
 
 
 

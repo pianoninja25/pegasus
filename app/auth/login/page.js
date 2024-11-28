@@ -21,9 +21,9 @@ const LoginPage = ({ error, callbackUrl }) => {
   }
   
   return (
-    <div className='flex justify-center items-center w-full min-h-screen bg-gradient-to-br from-amtblue via-amtblue to-slate-900'>
-      <div className='flex flex-col sm:flex-row justify-center items-center gap-[14vw] sm:gap-[8vw] h-full p-[10vw] sm:p-[8vw] m-[10vw] sm:m-[2vw] mb-[20vw] rounded-xl bg-black/10 neon-box'>
-        <img src="/unifiber-text.svg" width={300} height={300} alt="unifiber" className='drop-shadow-lg sm:w-[22vw]' />  
+    <div className='flex justify-center items-center w-full min-h-lvh bg-gradient-to-br from-amtblue via-amtblue to-slate-900'>
+      <div className='flex flex-col sm:flex-row justify-center items-center gap-[14vw] sm:gap-[8vw] h-full p-[12vw] sm:p-[8vw] m-[10vw] sm:m-[2vw] mb-[20vw] rounded-xl bg-black/10 neon-box'>
+        <img src="/unifiber-text.svg" width={180} height={180} alt="unifiber" className='drop-shadow-lg sm:w-[20vw]' />  
         <form onSubmit={handleSubmit} className='relative pb-[6vw] sm:pb-[2vw] px-[4vw] sm:px-[3vw] rounded-lg shadow-lg bg-white/40 backdrop:blur-sm'>
           <h1 className='font-montserrat text-center text-[4vw] sm:text-[1.4vw] py-[6vw] sm:py-[2vw] text-slate-50'>PLEASE LOGIN</h1>
           {error && <p className='absolute w-full left-0 top-12 sm:top-[4.4vw] text-xs sm:text-base text-center font-bold drop-shadow-md text-rose-400'>Authentication Failed!</p>}
