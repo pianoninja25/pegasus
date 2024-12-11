@@ -153,20 +153,6 @@ const Tables = ({ datas }) => {
 
   return (
     <div className="relative">
-      <div>
-        <Input
-          placeholder="Search..."
-          onChange={search}
-          style={{ marginBottom: 16, width: 300 }}
-        /> 
-        <CSVLink 
-          data={filterTable === null ? datas : filterTable}
-          filename={`Workorder - ${moment().format('YYYYMMDD HHmmss')}.csv`}
-          className="absolute left-[20rem] top-0.5 flex items-center gap-2 px-3 pt-1 pb-0.5 text-sm rounded-lg shadow-md border-2 border-white text-green-300 bg-green-100 hover:text-white hover:bg-green-400 z-[99]"
-        >
-          Download <FaDownload size={12} color="white" />
-        </CSVLink>
-      </div>
       <Table
         bordered
         components={{

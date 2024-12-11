@@ -136,11 +136,14 @@ th.ant-table-cell {
 
 
 /* .ant-table-cell */
+.ant-table-thead > tr > th {
+  background-color: rgb(240, 240, 240) !important;
+}
 .ant-table-row:nth-child(odd) {
-  background-color: #f5f5f4; /* Tailwind's slate-100 color */
+  background-color: #fafafa; /* Tailwind's slate-100 color */
 }
 .ant-table-tbody > tr:nth-child(odd) > .ant-table-cell-fix-left {
-  background-color: #f5f5f4; /* Tailwind's slate-100 color */
+  background-color: #fafafa; /* Tailwind's slate-100 color */
 }
 .ant-pagination-item a, .ant-pagination-item-link, .ant-select {
   font-family: Quicksand !important;
@@ -157,15 +160,34 @@ th.ant-table-cell {
   z-index: 99999 !important;
 }
 
+.ant-select  {
+  @apply p-1 border-none;
+}
+.ant-select-selector > span {
+  @apply !text-xs border-none -ml-1;
+}
+
+.ant-select-selector {
+  @apply !border-none shadow-sm;
+}
 
 
 /* Antd Form */
 .ant-modal-title, .ant-form-item-label, .ant-input, .ant-form-item-explain-error, .ant-form-item-control-input-content>p {
   @apply !font-quicksand;
 }
+.ant-form-item-explain-error {
+  @apply px-2 text-xxs;
+}
 
 
-
+/* Antd Date Picker */
+.ant-picker {
+  @apply w-full font-quicksand p-0 my-1 px-2 border-none rounded-md shadow-sm text-xs bg-white;
+}
+.ant-picker .ant-picker-input >input {
+  @apply py-1 text-xs;
+}
 
 /* Google Maps */
 .gm-style-mtc > button {
@@ -174,13 +196,36 @@ th.ant-table-cell {
 .gm-control-active, .gm-fullscreen-control {
   display: none !important;
 }
-.gmnoprint {
+.gmnoprint, .gm-style-cc {
   display: none !important;
 }
 
-
-/* Leaflet Maps */
-.leaflet-control-attribution  {
-  display: none !important;
+.pac-container {
+  @apply px-2 pr-4 my-4 rounded-sm font-quicksand !w-inherit text-sm;
 }
+
+.pac-container {
+  @apply shadow-sm rounded-md pb-4;
+}
+
+
+
+
+
+/* Scrollbar */
+.smooth-scrollbar::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.smooth-scrollbar::-webkit-scrollbar-track,
+.smooth-scrollbar::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+.smooth-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d6d6d6;
+  border-radius: 4px;
+}
+
 

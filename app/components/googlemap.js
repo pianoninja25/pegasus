@@ -1,9 +1,9 @@
-// components/GoogleMap.js
-import { GoogleMap, Marker, useLoadScript, Circle } from '@react-google-maps/api';
+import { GoogleMap, Marker, useLoadScript, Circle, DirectionsRenderer } from '@react-google-maps/api';
+import { MarkerClusterer } from '@react-google-maps/api';
 
-const libraries = ['places']; // Define libraries outside the component
+const libraries = ['places']; 
 
-const GoogleMapComponent = ({ center, markerPosition, onMarkerDragEnd, sampleFAT, onLoad }) => {
+const GoogleMapComponent = ({ center, markerPosition, radius, setRadius, onMarkerDragEnd, sampleFAT, directions, onLoad }) => {
   const mapContainerStyle = {
     width: '100%',
     height: '100vh',
@@ -25,7 +25,7 @@ const GoogleMapComponent = ({ center, markerPosition, onMarkerDragEnd, sampleFAT
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       center={center}
-      zoom={17}
+      zoom={10}
       onLoad={onLoad}
       onClick={onMarkerDragEnd}
     >
@@ -33,11 +33,82 @@ const GoogleMapComponent = ({ center, markerPosition, onMarkerDragEnd, sampleFAT
         position={markerPosition}
         draggable={true}
         onDragEnd={onMarkerDragEnd}
-      />
+        />
 
-      {sampleFAT.map((i, idx) => (
-        <Circle key={idx} center={i} radius={100} options={{ strokeColor: 'red', fillColor: 'red', fillOpacity: 0.05 }} />
-      ))}
+        <MarkerClusterer
+          options={{
+            maxZoom: 17,
+            styles: [
+              {
+                url: '/orange2.png',
+                width: 25,
+                height: 25,
+                fontFamily: 'Quicksand',
+                fontWeight: 'bold',
+                textColor: '#152c57',
+                textSize: 12,
+              },
+            ],
+          }}
+        >
+        {(clusterer) =>
+          sampleFAT.map((i, idx) => (
+            <Marker
+              key={idx}
+              position={i}
+              onClick={() => setRadius({ lat: i.lat, lng: i.lng })}
+              icon={{
+                url: 'http://localhost:4002/hijau.png',
+                scaledSize: new window.google.maps.Size(70, 50),
+                anchor: new window.google.maps.Point(35, 35),
+              }}
+              clusterer={clusterer}
+            />
+          ))
+        }
+      </MarkerClusterer>
+
+      {radius.lat && radius.lng && (
+        <Circle
+          center={{ lat: radius.lat, lng: radius.lng }}
+          radius={100}
+          options={{
+            strokeColor: "#2CF226",
+            strokeWeight: 0.5,
+            strokeOpacity: 0.5,
+            fillColor: "#23ad1f",
+            fillOpacity: 0.2,
+          }}
+        />
+      )}
+
+
+      {directions && (
+        <DirectionsRenderer
+          directions={directions}
+          options={{
+            suppressMarkers: true, 
+            polylineOptions: {
+              "icons": [{
+                "icon": {
+                  "path": 0,
+                  "scale": 5,
+                  "fillOpacity": 0.9,
+                  "fillColor": "#d9f99d",
+                  "strokeOpacity": 1,
+                  "strokeColor": "#0c8c0a",
+                  "strokeWeight": 1
+                },
+                "repeat": "14px"
+              }],
+              strokeColor: '#bef264',
+              strokeWeight: 8,
+              strokeOpacity: 0,
+            },
+          }}
+          
+        />
+      )}
     </GoogleMap>
   );
 };

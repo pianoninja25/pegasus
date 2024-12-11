@@ -1,15 +1,13 @@
-'use client'
+'use client';
 
-import { SessionProvider } from 'next-auth/react'
+import { SessionProvider } from 'next-auth/react';
 
-// import { ExpiredSession } from './expired-session'
-
-const AuthProvider = ({ children }) => {
+const AuthProvider = ({ children, session }) => {
   return (
-    <SessionProvider>
+    <SessionProvider session={session}>
       {children}
     </SessionProvider>
-  )
-}
+  );
+};
 
-export default AuthProvider
+export default AuthProvider;

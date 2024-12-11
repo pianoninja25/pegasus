@@ -1,3 +1,16 @@
+// // app/api/massoutage/route.js
+// import { io } from '../../../ws'; // Import the WebSocket server
+
+// export async function POST(req) {
+//   const data = await req.json(); // Process the data
+
+//   // Emit the notification to the WebSocket server
+//   io.emit('notification', `New mass outage data: ${JSON.stringify(data)}`);
+
+//   return new Response('Data received', { status: 200 });
+// }
+
+
 import { getServerSession } from "next-auth/next";
 import options from '../auth/[...nextauth]/options';
 import dbConnect from "@/utils/db-connection"; 
@@ -37,7 +50,6 @@ export async function GET(req) {
       return new Response('Internal Server Error', { status: 500 });
     } finally {
       dbConnect('pegasus').releaseConnection()
-      conn.close()
     }
   } else {
     return new Response('404 | This page could not be found.', { status: 404 });

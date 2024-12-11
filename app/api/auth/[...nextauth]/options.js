@@ -40,6 +40,7 @@ const options = {
           return null
         } finally {
           dbConnect('pegasus').releaseConnection()
+          // conn.close()
         }
       }
     })

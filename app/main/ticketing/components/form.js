@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 const { TextArea } = Input;
 
-const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
+const FormTicket = ({ user, setRefresh, loading, setLoading, isDesktop }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [form] = Form.useForm();
 
@@ -47,9 +47,10 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
   
   const handleOk = async () => {
     try {
-      setLoading(true);
       const values = await form.validateFields();
-  
+      console.log('Form Data:', values);
+      
+      setLoading(true);
       const username = user;
       const password = 'ioh456#';
       const token = await getToken(username, password);
@@ -59,15 +60,28 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
       setRefresh(ticketData)
   
       setIsModalOpen(false);
+      form.resetFields();
     } catch (error) {
       console.error('Error:', error);
-      message.error('Ticket Creation Failed! There was an issue while creating the ticket. Please try again.');
-    } finally {
-      form.resetFields();
+      message.error('Ticket Creation Failed! Please try again.');
+    } 
+    finally {
       setLoading(false);
     }
   };
+ 
+  // const handleOk = async () => {
+  //   try {
+  //     const values = await form.validateFields();
+  //     console.log('Form Data:', values);
+      
+  //     setLoading(true);
   
+  //   } catch (info) {
+  //     console.error('Validation Failed:', info);
+  //   }
+  // };
+
   // const handleOk = () => {
   //   form
   //     .validateFields()
@@ -94,12 +108,14 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
   }, [isModalOpen]);
 
   return (
-    <div className='fixed bottom-24 right-10 !font-quicksand'>
+    <div className='fixed bottom-24 right-10 sm:top-20 sm:right-14 sm:mt-4 !font-quicksand cursor-pointer'>
       <div
         onClick={() => setIsModalOpen(true)}
-        className='flex justify-center items-center w-10 h-10 p-1 shadow-md text-2xl rounded-full text-white border-2 border-white bg-amtblue'
+        className={`shadow-md rounded-full backdrop-blur-sm text-white border-1 border-white bg-amtorange/80 hover:bg-amtorange
+          ${isDesktop ? 'px-4 py-1 text-xs' 
+          : 'flex justify-center items-center w-10 h-10 p-1 text-2xl border-2'}`}
       >
-        +
+        {`${isDesktop ? '+ Create Ticket' : '+'} `}
       </div>
 
       <Modal
@@ -117,7 +133,7 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
         ]}
         className='top-[8vh] px-4'
       >
-        <Form form={form} layout="vertical" className='space-y-4 m-0 p-0 my-8'>          
+        <Form form={form} layout="vertical" className='space-y-4 m-0 p-0 my-8' onFinish={handleOk}>          
 
           <Form.Item
             label="Customer ID"
@@ -141,7 +157,7 @@ const FormTicket = ({ user, setRefresh, loading, setLoading }) => {
             name="tier1"
             className='m-0 text-xs space-x-0 space-y-0 gap-0'
             >
-            <Input className='m-0 px-2 bg-slate-100' readOnly />
+            <Input className='m-0 px-2 bg-slate-100' disabled />
           </Form.Item>
 
           <Form.Item

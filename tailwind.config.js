@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        inherit: 'inherit',
+      },
+      fontSize: {
+        xxs: ['0.625rem', '0.75rem'],
+      },
       fontFamily: {
         'roboto': ['Roboto', 'serif'],
         'montserrat': ['Montserrat', 'serif'],

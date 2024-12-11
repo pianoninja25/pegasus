@@ -1,42 +1,49 @@
-import { getServerSession } from "next-auth/next";
-import options from '../auth/[...nextauth]/options';
-import orderHub from "@/utils/db-orderHub";
+import { NextResponse } from 'next/server';
 
-export async function GET(req) {
-  const pquery = req.nextUrl.searchParams.get("query");
-  const pclient = req.nextUrl.searchParams.get("client");
+const API_URL = 'http://10.10.4.2/amt/1.1/eda/productOrderManagement/v4/productOrder';
+const TOKEN_URL = 'http://10.10.4.2/amt/1.1/atm/generateToken';
 
-  let q = `CALL workorder_list('Dankom')`;
-  // if(pquery === 'check_coverage') {
-  //   q = `CALL check_coverage('${pclient}', ${plong}, ${plat});`;
-  // } 
-  // else if(pquery === 'check_availability') {
-  //   q = `CALL check_availability('${pfatid}');`;
-  // } 
-  // else if(pquery === 'sample_client_sitelist') {
-  //   q = `CALL sample_client_sitelist('${pclient}');`;
-  // }
+async function getToken() {
+  const response = await fetch(TOKEN_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      email: 'Pramana@ioh.co.id',
+      password: 'ltsm321Q@',
+    }),
+  });
 
-  console.log(q);
-
-  const session = await getServerSession(options);
-  if (!session) {
-    return new Response(JSON.stringify({ message: "You don't have the authorization!" }), { status: 401 });
+  if (!response.ok) {
+    throw new Error('Failed to retrieve token');
   }
 
-  if (pquery) {
-    let conn;
-    try {
-      conn = await orderHub('orders').getConnection();
-      const [rows] = await conn.query(q);
-      return new Response(JSON.stringify(rows[0] || rows), { status: 200 });
-    } catch (error) {
-      console.error('Error querying database:', error);
-      return new Response('Internal Server Error', { status: 500 });
-    } finally {
-      orderHub('orders').releaseConnection()
-    }
-  } else {
-    return new Response('404 | This page could not be found.', { status: 404 });
+  const data = await response.json();
+  console.log(data.body.accessToken)
+  return data.body.accessToken;
+}
+
+export async function POST(req) {
+  try {
+    const body = await req.json();
+    const token = await getToken();
+
+    const apiResponse = await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${token}`,
+      },
+      body: JSON.stringify(body),
+    });
+
+    const data = await apiResponse.json();
+    return NextResponse.json(data, { status: apiResponse.status });
+  } catch (error) {
+    return NextResponse.json(
+      { error: error.message || 'Failed to fetch data' },
+      { status: 500 }
+    );
   }
 }

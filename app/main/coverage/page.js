@@ -1,31 +1,61 @@
-'use client';
+'use client'
 
-import { useEffect, useState, useRef } from 'react';
-
-import LocationToggle from '../../components/toggle2';
+import React, { useEffect, useRef, useState } from 'react'
 import GoogleMaps from '../../components/googlemap';
-import { message } from 'antd';
+import { Input } from 'antd';
+import { Autocomplete } from '@react-google-maps/api';
 import { useSession } from 'next-auth/react';
-import Modal from '@/app/components/modal';
+import { message } from 'antd';
+import Table from './components/table';
 
-
-const MapContainer = () => {
+const CheckCoverage = () => {
   const { data: session, status} = useSession()
-
+  const [isActive, setIsActive] = useState('Location')
+  const [isGoogleLoaded, setIsGoogleLoaded] = useState(false); 
+  
   const [center, setCenter] = useState({ lat: -6.2, lng: 106.8 });
   const [markerPosition, setMarkerPosition] = useState({ lat: -6.2, lng: 106.8 });
-  const [isGoogleLoaded, setIsGoogleLoaded] = useState(false); 
-  const autocompleteRef = useRef(null);
+  const [radius, setRadius] = useState({ lng: -18.15, lat: 29.73} )
 
-  const [sampleFAT, setSampleFAT] = useState([])
+  const [directions, setDirections] = useState(null);
+  const [destinationFAT, setDestinationFAT] = useState({})
+  
   const [address, setAddress] = useState('')
   const [homepass, setHomepass] = useState('')
+  const [sampleFAT, setSampleFAT] = useState([]);
   const [loading, setLoading] = useState(false)
 
+  const autocompleteRef = useRef(null);
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
+  const autocompleteOptions = {
+    bounds: {
+      north: 6.2745,
+      south: -11.0083,
+      east: 141.0218,
+      west: 94.9117,
+    },
+    strictBounds: true,
+  };
   
+  // Show sample nearby FAT to test
+  useEffect(() => {
+    const fetchCoverageData = async () => {
+      try {
+        const response = await fetch(`/api/coverage?query=sample_client_sitelist&client=${session?.user.name}`);
+        const data = await response.json();
+        const fetchedMarkers = data.map(i => ({
+          lat: i.geolocation.y,
+          lng: i.geolocation.x,
+        }));
+        setSampleFAT(fetchedMarkers);
+      } catch (error) {
+        console.error("Error fetching coverage data:", error);
+      }
+    };
+    fetchCoverageData();
+  }, [session]);
+
+
   // Get GPS current position
   useEffect(() => {
     if (navigator.geolocation) {
@@ -47,25 +77,34 @@ const MapContainer = () => {
     }
   }, []);
 
-
-  // Show sample nearby FAT to test
-  useEffect(() => {
-    const fetchCoverageData = async () => {
-      try {
-        const response = await fetch(`/api/coverage?query=sample_client_sitelist&client=${session?.user.name}`);
-        const data = await response.json();
-        const fetchedMarkers = data.map(i => ({
-          lat: i.geolocation.y,
-          lng: i.geolocation.x,
-        }));
-        setSampleFAT(fetchedMarkers);
-      } catch (error) {
-        console.error("Error fetching coverage data:", error);
-      }
+  // Select GPS position
+  const onMarkerDragEnd = (event) => {
+    
+    const newPosition = {
+      lat: event.latLng.lat(),
+      lng: event.latLng.lng(),
     };
-    fetchCoverageData();
-  }, [session]);
+    setMarkerPosition(newPosition);
 
+    if (window.google && window.google.maps) {
+      const geocoder = new window.google.maps.Geocoder();
+      
+      geocoder.geocode({ location: newPosition }, (results, status) => {
+        if (status === "OK") {
+          if (results[0]) {
+            const address = results[0].formatted_address;
+            setAddress(address);
+          } else {
+            console.log("No address found");
+          }
+        } else {
+          console.error("Geocoder failed due to: " + status);
+        }
+      });
+    }
+
+
+  };
 
   // Handle place selection from Autocomplete
   const onPlaceChanged = () => {
@@ -102,114 +141,185 @@ const MapContainer = () => {
       }
     }
   };
-  
-
-
-  // Handle marker drag end to update position
-  const onMarkerDragEnd = (event) => {
-    
-    const newPosition = {
-      lat: event.latLng.lat(),
-      lng: event.latLng.lng(),
-    };
-    setMarkerPosition(newPosition);
-
-    if (window.google && window.google.maps) {
-      const geocoder = new window.google.maps.Geocoder();
-      
-      geocoder.geocode({ location: newPosition }, (results, status) => {
-        if (status === "OK") {
-          if (results[0]) {
-            const address = results[0].formatted_address;
-            setAddress(address);
-          } else {
-            console.log("No address found");
-          }
-        } else {
-          console.error("Geocoder failed due to: " + status);
-        }
-      });
-    }
-
-
-  };
-
 
   // Handle check FAT nearby
   const onCheckCoverage = async () => {
     try {
       setLoading(true)
+      setHomepass({})
       const response = await fetch(`/api/coverage?query=check_coverage&client=${session?.user.name}&long=${markerPosition?.lng}&lat=${markerPosition?.lat}`);
+
       if (!response.ok) {
         message.error('Failed to fetch data!');
         return false;
       }
       const data = await response.json();
-      const fatidList = data.map(item => item.fatid);
-      if(fatidList.length > 0) {
-        message.success('Area covered') 
-        onCheckAvailability(fatidList)
-        // message.loading('Checking available homepass', 0)
+      if(data.length > 0) {
+        message.success('Area covered!')
+        const nearbyFAT = await onCheckRouteDistance(data)
+        onCheckAvailability(nearbyFAT)
+        // console.log(nearbyFAT)
+        return
       } else {
         message.warning('Area Not Covered!');
+        setLoading(false)
       }
     } catch (error) {
       console.error('Error fetching data:', error);
       message.error('An error occurred while fetching data.');
-    } finally {
-      setLoading(false)
-    }
+    } 
   };
 
+   // Handle check route directions & distance
+  const onCheckRouteDistance = async (datas) => {
+    try {
+      const response = await fetch(`/api/test`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          origins: markerPosition,
+          destinations: datas
+        }),
+      });
+  
+      if (!response.ok) {
+        console.error('Error:', response.statusText);
+        return;
+      }
+  
+      const data = await response.json();
+      return data
+    } catch (error) {
+      console.error('Fetch error:', error);
+    }
+  };
   
   // Handle check homepass availability
-  const onCheckAvailability = async (fatidList) => {
-    for (const fatid of fatidList) {
+  const onCheckAvailability = async (dataFAT) => {
+    console.log(dataFAT)
+    for (const i of dataFAT) {
       try {
-        const response = await fetch(`/api/coverage?query=check_availability&fatid=${fatid}`);
+        setLoading(true);
+  
+        const response = await fetch(`/api/coverage?query=check_availability&fatid=${i.fatid}`);
         if (!response.ok) {
-          throw new Error(`Error fetching data for FATID: ${fatid}`);
+          throw new Error(`Failed to fetch data. Status: ${response.status}, FATID: ${i.fatid}`);
         }
+  
         const data = await response.json();
-        if (data.length>0) {
-          console.log(data)
-          // message.success({ content: `Homepass available ${data[0].id} - ${data[0].type}` });
-          setHomepass(data[0])
-          setIsModalOpen(true)
-          return data;
+  
+        if (data.length > 0) {
+          message.success({ content: `Homepass available for FATID: ${i.fatid}` });
+          setHomepass(data[0]);
+  
+
+          const [lat, lng] = i.destination.split(',').map(Number);
+          const directionsService = new google.maps.DirectionsService();
+          directionsService.route(
+            {
+              origin: { lat: markerPosition.lat, lng: markerPosition.lng },
+              destination: { lat, lng },
+              travelMode: google.maps.TravelMode.WALKING,
+            },
+            (result, status) => {
+              if (status === google.maps.DirectionsStatus.OK) {
+                setDirections(result);
+              } else {
+                console.error(`Directions request failed: ${status}`);
+              }
+            }
+          );
+  
+          return data; // Stop processing after finding the first available FATID
         } else {
-          message.warning({ content: `Homepass not available` });
+          message.warning({ content: `Homepass not available for FATID: ${i.fatid}` });
         }
       } catch (error) {
-        console.error('Request failed:', error);
+        console.error(`Error processing FATID: ${i.fatid}`, error);
+        message.error({ content: `Check your internet connection!` });
+        setLoading(false);
+      } finally {
+        setLoading(false);
       }
     }
-    console.log('No data found in any fatid.');
-    return null; // Return null if no data found in any item
+  
+    console.log('No data found for any FATID.');
+    return null;
   };
   
+
+
+
   return (
-    <div className="relative h-lvh overflow-hidden">
-      <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} datas={homepass} />
-      <LocationToggle 
-        isGoogleLoaded={isGoogleLoaded} 
-        autocompleteRef={autocompleteRef} 
-        onPlaceChanged={onPlaceChanged} 
-        onCheckCoverage={onCheckCoverage}
-        address={address}
-        setAddress={setAddress}
-        loading={loading}
-      />
-      <GoogleMaps 
-        center={center} 
-        markerPosition={markerPosition}
-        onMarkerDragEnd={onMarkerDragEnd} 
-        sampleFAT={sampleFAT}
-        onLoad={() => setIsGoogleLoaded(true)} 
-      />
+    <div className='flex h-screen p-2 pt-14 shadow-md bg-slate-300'>
+      {/* h-[calc(100vh_-_.5rem)]  */}
+      <div className='w-80 h-full rounded-l-lg border-l-2 border-y-2 border-white bg-white  sm:block'>
+        <div className='flex justify-evenly p-2 text-sm font-bold text-white'>
+          <div
+            onClick={() => setIsActive('Location')} 
+            className={`w-full h-fit p-1.5 text-center text-xs rounded-l-lg ${isActive === 'Location' ? 'from-blue-500 to-amtblue' : 'from-slate-200 to-slate-300'} border-l-2 border-y-2 border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
+          >
+            <h2 className='text-xs'>Location</h2>
+          </div>
+          <div
+            onClick={() => setIsActive('Address')} 
+            className={`w-full h-fit p-1.5 text-center text-xs rounded-r-lg ${isActive === 'Address' ? 'to-blue-500 from-amtblue' : 'from-slate-200 to-slate-300'} border-r-2 border-y-2 border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
+            >
+            <h2 className='text-xs'>Address</h2>
+          </div>
+        </div>
+        
+        {isActive == 'Location' && isGoogleLoaded
+          ? 
+            <div className='flex flex-col h-[calc(100vh_-_8rem)] p-2 overflow-y-auto smooth-scrollbar'>
+              <h3 className='p-1 text-xs font-bold text-slate-500'>Find Location</h3>
+              <Autocomplete
+                onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
+                onPlaceChanged={onPlaceChanged}
+                restrictions={{ country: 'ID' }}
+              >
+                <Input 
+                  placeholder="Find Location" 
+                  className='text-xs break-words' 
+                  options={autocompleteOptions} 
+                  value={address} 
+                  onChange={(e) => setAddress(e.target.value)}
+                  allowClear
+                />
+              </Autocomplete>
+              <button 
+                onClick={onCheckCoverage}
+                disabled={loading}
+                className='relative place-self-center w-fit px-4 py-1.5 my-4 rounded-full shadow-sm text-xxs font-bold text-center text-white bg-gradient-to-br from-lime-500 to-teal-600 disabled:text-lime-300 disabled:cursor-not-allowed transition-all duration-500 hover:shadow-lg hover:scale-105'
+              >
+                {loading ? 'Checking...' : 'Check Coverage'} 
+              </button>
+
+              {Object.keys(homepass).length > 0 && <Table datas={homepass} session={session} />}
+            </div> 
+          :
+            <div className='p-4'>
+              TEST
+            </div>
+        }
+      </div>
+      <div className='relative flex-1 rounded-r-lg border-2 border-white overflow-hidden'>
+        <div className={`${loading ? 'loading p-60 z-50 rounded-full shadow-md backdrop-blur-md bg-amtorange/10' : ''}`} />
+        <GoogleMaps 
+          center={center} 
+          markerPosition={markerPosition}
+          radius={radius}
+          setRadius={setRadius}
+          onMarkerDragEnd={onMarkerDragEnd} 
+          sampleFAT={sampleFAT}
+          directions={directions}
+          onLoad={() => setIsGoogleLoaded(true)} 
+        />
+      </div>
     </div>
-  );
-};
+  )
+}
 
-export default MapContainer;
-
+export default CheckCoverage

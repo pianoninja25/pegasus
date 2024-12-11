@@ -14,6 +14,11 @@ const Card = ({ datas }) => {
     return <div>No data.</div>
   }
 
+  const color = 
+    datas.ticket_status == 'Open' ? 'text-rose-700 bg-rose-100' 
+    : datas.ticket_status == 'Progress' ? 'text-orange-700 bg-orange-100' 
+    : datas.ticket_status == 'Complete' ? 'text-green-700 bg-green-100' : 'text-slate-700 bg-slate-100'
+
   return (
     <div className='flex justify-center py-4'>
       <div className='grid w-[92vw] p-2 shadow-lg rounded-xl bg-white'>
@@ -27,7 +32,7 @@ const Card = ({ datas }) => {
                   <h2 className='font-bold text-sm text-ellipsis overflow-hidden whitespace-nowrap'>{datas.customer_id}</h2>
                 </td>
                 <td className='text-center'>
-                  <h2 className={`py-1 mx-4 text-sm font-bold rounded-lg shadow-md ${datas.ticket_color}`}>{datas.ticket_status.toUpperCase()}</h2>
+                  <h2 className={`py-1 mx-4 text-sm font-bold rounded-lg shadow-md ${color}`}>{datas.ticket_status.toUpperCase()}</h2>
                 </td>
               </tr>
               <tr>

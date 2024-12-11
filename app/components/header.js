@@ -35,14 +35,14 @@ const Header = ({ user }) => {
 
 
   return (
-    <div className='fixed flex justify-between items-center w-screen h-14 bg-amtblue z-[999]'>
+    <div className='fixed flex justify-between items-center w-screen h-12 shadow-md bg-amtblue z-[999]'>
       
       {/* LOGO */}
       <Link href="/" className='flex gap-1 items-center h-fit text-2xl z-20'>
         <div className='w-10 sm:w-14 ml-4 rounded-full'>
-          <Image className="w-auto h-auto p-1.5 sm:p-3 drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" width={20} height={20} loading="lazy" />
+          <Image className="w-auto h-auto p-1.5 sm:p-4 drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" priority width={20} height={20} />
         </div>
-        <h1 className="text-nowrap text-sm sm:text-base text-white drop-shadow-sm">{user}</h1>
+        <h1 className="text-nowrap text-sm sm:text-sm  text-white drop-shadow-sm">{user}</h1>
 
       </Link>
 
@@ -64,7 +64,7 @@ const Header = ({ user }) => {
 
         {/* TEXT */}
         <nav
-          className={`absolute top-2 right-4 flex-col sm:items-center gap-1 w-full max-w-40 h-fit pt-6 pb-6 rounded-md shadow-md backdrop-blur-md bg-gradient-to-b from-white/75 to-white/5 
+          className={`absolute top-1 right-4 flex-col sm:items-center gap-1 w-full max-w-40 h-fit pt-6 pb-6 rounded-md shadow-md backdrop-blur-md bg-gradient-to-b from-white/75 to-white/5 
           sm:flex-row sm:justify-center sm:right-32 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
           ${open ? 'flex' : 'hidden sm:flex mr-10'}`}
         >
@@ -77,32 +77,20 @@ const Header = ({ user }) => {
             <Link
               key={title}
               href={url}
-              // className={`px-4 py-0.5 rounded-md sm:text-white text-sm hover:text-orange hover:scale-110`}
-              className={`text-xs px-6 sm:px-4 p-1 font-montserrat font-semibold rounded-md drop-shadow-md text-amtblue sm:text-slate-200 hover:text-orange hover:scale-110 
-                ${url==pathname ? '!text-amtorange' :''}`
+              className={`text-xs px-6 sm:px-4 p-1 font-quicksand font-semibold rounded-md drop-shadow-md text-amtblue sm:text-slate-200 hover:text-amtorange transition-all duration-500 hover:shadow-lg hover:scale-110 
+                ${url==pathname ? '!text-amtorange !font-bold' :''}`
               }
             >
               { title }
             </Link>
-
-            // <Link
-            // key={title}
-            // href={url}
-            // className={`text-sm px-6 p-1 font-montserrat font-semibold rounded-md drop-shadow-md text-white hover:text-orange hover:scale-110 
-            //   ${title=='Home' ? ' sm:hidden' :''}
-            //   ${url==pathname ? '!text-black' :''}`
-            // }
-            // >
-            // { title }
-            // </Link>
           ))}
 
           <button 
             onClick={() => signOut()} 
-            className='flex items-center justify-around gap-2 w-fit h-fit px-6 py-1 text-xs font-bold drop-shadow-md text-amtblue sm:text-slate-200 hover:scale-110'
+            className='flex items-center justify-around gap-2 w-fit h-fit px-6 py-1.5 text-xs font-semibold drop-shadow-md text-amtblue sm:text-slate-200 hover:text-amtorange transition-all duration-500 hover:shadow-lg hover:scale-110'
           >
             Logout 
-            <IoLogOut size={20} />
+            <IoLogOut size={18} />
           </button>
         </nav>
       </div>

@@ -1,12 +1,15 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-// import Tables from './component/table'
 import { useSession } from 'next-auth/react'
 import { useMediaQuery } from 'react-responsive'
-import Card from './components/card'
+import { CSVLink } from 'react-csv'
+import { FaDownload } from 'react-icons/fa'
+import moment from 'moment'
 import FormTicket from './components/form'
 import Filter from './components/filter'
+import Card from './components/card'
+import Tables from './components/table'
 
 const Ticketing = () => {
   const { data: session, status} = useSession()
@@ -24,34 +27,65 @@ const Ticketing = () => {
   const [loading, setLoading] = useState(false)
   const [refresh, setRefresh] = useState([])
 
+
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchTokenAndData = async () => {
       if (!session?.user?.name) {
         console.warn("User name is undefined, skipping fetch.");
         return;
       }
-
+  
       try {
-        setLoading(true);
+        const tokenResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL}:8002/token`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            // username: session?.user?.name,
+            username: "CX IOH",
+            password: "ioh456#",
+          }),
+        });
+  
+        if (!tokenResponse.ok) {
+          throw new Error(`Failed to fetch token. Status: ${tokenResponse.status}`);
+        }
+  
+        const tokenData = await tokenResponse.json();
+        const token = tokenData.access_token;
+  
+        if (!token) {
+          throw new Error("Token is missing in the response");
+        }
+  
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_API_URL}:8002/tickets?client_name=${encodeURIComponent(session.user.name)}`
+          `${process.env.NEXT_PUBLIC_API_URL}:8002/tickets?client_name=${encodeURIComponent(session.user.name)}`,
+          {
+            method: "GET",
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
         );
+  
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
+  
         const data = await response.json();
         setDatas(data);
       } catch (error) {
         console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
       }
     };
-
+  
+    
     if (session?.user?.name) {
-      fetchData();
+      fetchTokenAndData();
     }
-  }, [session?.user?.name, refresh]);
+  }, [session?.user?.name]);
+
 
   // const datas = [
   //   {
@@ -101,10 +135,11 @@ const Ticketing = () => {
   );
   const filteredData = datas?.filter((i) => {
     const matchesSearch =
-      i.customer_id.toLowerCase().includes(searchValue.toLowerCase());
+      i.customer_id.toLowerCase().includes(searchValue.toLowerCase()) || 
+      i.amt_ticket_id.toLowerCase().includes(searchValue.toLowerCase());
 
     const matchesStatus =
-      statusFilter === 'All' || i.status === statusFilter;
+      statusFilter === 'All' || i.ticket_status === statusFilter;
 
     return matchesSearch && matchesStatus;
   });
@@ -113,20 +148,41 @@ const Ticketing = () => {
     <div className='min-h-screen pt-20 bg-slate-100 pb-20'>
       {!isDesktop && datas.length>=0 && (
         <div className='sm:hidden'>
-          <div className={!session || loading ? 'loading' : ''} />
-          <Filter {...{ handleSearchChange, statusFilter, setStatusFilter, statusCounts }} />
-          <FormTicket user={session?.user?.name} setRefresh={setRefresh} loading={loading} setLoading={setLoading} />
-          {filteredData?.map((a, idx) => (
-            <Card key={idx} datas={a} />
-          ))}
-          {filteredData.length<1 && <p className='text-center p-12'>No data.</p>}
+          {!session || loading || filteredData.length<1
+          ? <div className='loading' />
+          : 
+            <>
+            <Filter {...{ handleSearchChange, statusFilter, setStatusFilter, statusCounts }} />
+            <FormTicket user={session?.user?.name} {...{setRefresh, loading, setLoading, isDesktop}} />
+            {filteredData?.map((a, idx) => (
+              <Card key={idx} datas={a} />
+            ))}
+            {filteredData.length<1 && <p className='text-center p-12'>No data.</p>}
+            </>
+          }
         </div>
       )}
 
-      {isDesktop && <div className='relative min-h-80 m-10 mt-2 mb-4 p-8 pb-0 shadow-sm rounded-xl bg-white'>
-        <div className={!session || loading ? 'loading' : ''} />
-        {/* {!loading && <Tables datas={datas} />} */}
-      </div>}
+      {isDesktop && (
+        <div className='relative min-h-80 m-10 mt-0 mb-4 p-8 pt-6 pb-0 shadow-sm rounded-xl bg-white'>
+          {!session || loading || filteredData.length<1
+          ? <div className='loading' />
+            : 
+            <>
+              <FormTicket user={session?.user?.name} {...{setRefresh, loading, setLoading, isDesktop}} />
+              <Filter {...{ handleSearchChange, statusFilter, setStatusFilter, statusCounts }} />
+              <CSVLink 
+                data={datas.map(({ detail, billing_ioh, smartcare_id, ...rest }) => rest)}
+                filename={`Ticket - ${moment().format('YYYYMMDD HHmmss')}.csv`}
+                className="absolute left-[19rem] top-6 flex items-center gap-2 px-4 py-1 text-xs rounded-full shadow-sm border border-white text-white bg-amtblue/20 hover:bg-amtblue z-[99]"
+              >
+                Download <FaDownload size={14} color="white"  className='pb-0.5'/>
+              </CSVLink>
+              <Tables datas={filteredData} />
+            </>
+          }        
+        </div>
+      )}
     </div>
   )
 }

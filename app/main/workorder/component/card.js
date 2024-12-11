@@ -21,6 +21,12 @@ const Card = ({ datas }) => {
         .join(' ')
     : ''
 
+  const color = 
+  datas.status == 'Complete' ? 'text-green-700 bg-green-100' 
+  : datas.status == 'Progress' ? 'text-orange-700 bg-orange-100' 
+  : datas.status == 'Awaiting' ? 'text-yellow-700 bg-yellow-100' : 'text-slate-700 bg-slate-100'
+
+
   return (
     <div className='flex justify-center py-4'>
       <div className='grid w-[92vw] p-2 shadow-lg rounded-xl bg-white'>
@@ -34,7 +40,7 @@ const Card = ({ datas }) => {
                   <h2 className='font-bold text-sm text-ellipsis overflow-hidden whitespace-nowrap'>{customer_name}</h2>
                 </td>
                 <td className='text-center'>
-                  <h2 className={`py-1 mx-4 text-sm font-bold rounded-lg shadow-md ${datas.color}`}>{datas.status.toUpperCase()}</h2>
+                  <h2 className={`py-1 mx-4 text-sm font-bold rounded-lg shadow-md ${color}`}>{datas.status.toUpperCase()}</h2>
                 </td>
               </tr>
               <tr>
