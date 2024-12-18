@@ -25,7 +25,7 @@ const GoogleMapComponent = ({ center, markerPosition, radius, setRadius, onMarke
     <GoogleMap
       mapContainerStyle={mapContainerStyle}
       center={center}
-      zoom={10}
+      zoom={15}
       onLoad={onLoad}
       onClick={onMarkerDragEnd}
     >
@@ -58,9 +58,9 @@ const GoogleMapComponent = ({ center, markerPosition, radius, setRadius, onMarke
               position={i}
               onClick={() => setRadius({ lat: i.lat, lng: i.lng })}
               icon={{
-                url: 'http://localhost:4002/hijau.png',
-                scaledSize: new window.google.maps.Size(70, 50),
-                anchor: new window.google.maps.Point(35, 35),
+                url: 'http://localhost:4002/fat-green.png',
+                scaledSize: new window.google.maps.Size(25, 30),
+                // anchor: new window.google.maps.Point(35, 35),
               }}
               clusterer={clusterer}
             />

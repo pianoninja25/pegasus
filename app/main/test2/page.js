@@ -1,11 +1,17 @@
-import moment from 'moment';
-import React from 'react'
+"use client";
+
+import { useSessionContext } from "@/app/context/session-provider";
+
 
 const Test = () => {
-  const nowAsInt = moment();
-  return (
-    <div className='pt-20'>Test: {nowAsInt.valueOf()}</div>
-  )
-}
+  const session = useSessionContext();
 
-export default Test
+  return (
+    <div className="pt-20">
+      <h1>Welcome, {session?.user?.name || "Guest"}!</h1>
+      <p>Email: {session?.user?.email}</p>
+    </div>
+  );
+};
+
+export default Test;

@@ -6,11 +6,11 @@ export const metadata = {
   description: "Created by Leonard Sianipar",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, session }) {
   return (
     <html lang="en">
       <body className="antialiased font-quicksand">
-        <AuthProvider>
+        <AuthProvider session={session}>
           {children}
         </AuthProvider>
       </body>

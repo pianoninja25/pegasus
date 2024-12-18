@@ -1,18 +1,19 @@
 'use client'
-import AuthProvider from '../context/auth-provider'
 import Header from '../components/header';
 import MenuBottom from '../components/menu-bottom'
 
 import { useSession } from 'next-auth/react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import "../globals.css"
+import { SessionProvider } from '../context/session-provider';
 
 
 
 
 export default function RootLayout({ children }) {
   const { data: session, status} = useSession()
+  
   // const [datas, setDatas] = useState()
 
 
@@ -77,22 +78,19 @@ export default function RootLayout({ children }) {
 
   
   return (
-    <html lang="en">
-      <body className="antialiased font-quicksand">
-        <AuthProvider>
-          <Header user={session?.user.name} />
-            {children}
-          <footer className='fixed bottom-0 w-full z-[999] sm:hidden'>
-            <MenuBottom />
-
-            {/* MASS OUTAGE - Need to put here, so the notif is appear on other page! */}
-            {/* <div className='absolute bottom-10 right-4 flex justify-center items-center w-6 h-6 p-1 rounded-full text-white bg-amtred animate-bounce'>
-              <span className='text-xs font-bold'>{datas}</span>
-            </div> */}
-          </footer>
-        </AuthProvider>
-
-      </body>
-    </html>
+    // <>
+    //   <Header user={session?.user.name} />
+    //     {childrenWithProps}
+    //   <footer className='fixed bottom-0 w-full z-[999] sm:hidden'>
+    //     <MenuBottom />
+    //   </footer>
+    // </>
+    <SessionProvider session={session}>
+      <Header user={session?.user?.name} />
+      {children}
+      <footer className="fixed bottom-0 w-full z-[999] sm:hidden">
+        <MenuBottom />
+      </footer>
+    </SessionProvider>
   )
 }

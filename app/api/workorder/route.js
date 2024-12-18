@@ -1,17 +1,17 @@
 import { NextResponse } from 'next/server';
 
-const API_URL = 'http://10.10.4.2/amt/1.1/eda/productOrderManagement/v4/productOrder';
-const TOKEN_URL = 'http://10.10.4.2/amt/1.1/atm/generateToken';
+const TOKEN_URL = process.env.WO_TOKEN_URL
+const API_URL = process.env.WO_CREATE
 
-async function getToken() {
+async function getToken(email, password) {
   const response = await fetch(TOKEN_URL, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      email: 'Pramana@ioh.co.id',
-      password: 'ltsm321Q@',
+      email: email,
+      password: password
     }),
   });
 
@@ -20,14 +20,20 @@ async function getToken() {
   }
 
   const data = await response.json();
-  console.log(data.body.accessToken)
   return data.body.accessToken;
 }
 
 export async function POST(req) {
   try {
     const body = await req.json();
-    const token = await getToken();
+    const { email, password, payload } = body;
+
+
+    if (!email || !password) {
+      throw new Error('Email and password are required');
+    }
+
+    const token = await getToken(email, password);
 
     const apiResponse = await fetch(API_URL, {
       method: 'POST',
@@ -35,7 +41,7 @@ export async function POST(req) {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify(body),
+      body: JSON.stringify(payload),
     });
 
     const data = await apiResponse.json();

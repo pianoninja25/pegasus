@@ -188,8 +188,33 @@ th.ant-table-cell {
 .ant-picker .ant-picker-input >input {
   @apply py-1 text-xs;
 }
+.ant-picker-panel-container {
+  .ant-picker-presets {
+    min-height: 25rem !important;
+  }
+  @media (max-width: 800px) {
+    overflow: scroll !important;
+    height: 400px;
+    .ant-picker-panel-layout {
+      flex-direction: column !important;
+
+      .ant-picker-presets {
+        max-width: 100% !important;
+        min-height: 10rem !important;
+      }
+
+      .ant-picker-panels,
+      .ant-picker-datetime-panel {
+        flex-direction: column !important;
+      }
+    }
+  }
+}
 
 /* Google Maps */
+.gm-style iframe + div { 
+  border:none!important; 
+}
 .gm-style-mtc > button {
   display: none !important;
 }
@@ -203,7 +228,6 @@ th.ant-table-cell {
 .pac-container {
   @apply px-2 pr-4 my-4 rounded-sm font-quicksand !w-inherit text-sm;
 }
-
 .pac-container {
   @apply shadow-sm rounded-md pb-4;
 }

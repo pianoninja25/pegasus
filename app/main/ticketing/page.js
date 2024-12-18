@@ -42,9 +42,8 @@ const Ticketing = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            // username: session?.user?.name,
-            username: "CX IOH",
-            password: "ioh456#",
+            username: session?.user?.name,
+            password: "test",
           }),
         });
   

@@ -35,14 +35,14 @@ const Header = ({ user }) => {
 
 
   return (
-    <div className='fixed flex justify-between items-center w-screen h-12 shadow-md bg-amtblue z-[999]'>
+    <div className='fixed flex justify-between items-center w-screen h-14 sm:h-12 shadow-md bg-amtblue z-[999]'>
       
       {/* LOGO */}
-      <Link href="/" className='flex gap-1 items-center h-fit text-2xl z-20'>
+      <Link href="/" className='flex gap-2 sm:gap-1 items-center h-fit text-2xl z-20'>
         <div className='w-10 sm:w-14 ml-4 rounded-full'>
           <Image className="w-auto h-auto p-1.5 sm:p-4 drop-shadow-md hover:scale-110" src="/unifiber-logo.svg" alt="logo" priority width={20} height={20} />
         </div>
-        <h1 className="text-nowrap text-sm sm:text-sm  text-white drop-shadow-sm">{user}</h1>
+        <h1 className="text-nowrap text-base sm:text-sm text-white drop-shadow-sm">{user}</h1>
 
       </Link>
 

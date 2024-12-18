@@ -3,15 +3,15 @@
 import { useEffect, useState } from 'react'
 import Card from './component/card'
 import Tables from './component/table'
-import { useSession } from 'next-auth/react'
 import { useMediaQuery } from 'react-responsive'
 import Filter from './component/filter'
 import { CSVLink } from 'react-csv'
 import moment from 'moment'
 import { FaDownload } from 'react-icons/fa'
+import { useSessionContext } from "@/app/context/session-provider";
 
 const WorkOrder = () => {
-  const { data: session, status} = useSession()
+  const session = useSessionContext()
 
   const [isDesktop, setIsDesktop] = useState(false)
   const mediaQuery = useMediaQuery({
@@ -43,9 +43,8 @@ const WorkOrder = () => {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            // username: session?.user?.name,
-            username: "CX IOH",
-            password: "ioh456#",
+            username: session?.user?.name,
+            password: "test",
           }),
         });
   

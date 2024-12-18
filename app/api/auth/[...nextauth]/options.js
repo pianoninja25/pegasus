@@ -1,8 +1,6 @@
-import CredentialsProvider from "next-auth/providers/credentials"
-import crypto from 'crypto'
-
-import dbConnect from "../../../../utils/db-connection" 
-
+import CredentialsProvider from "next-auth/providers/credentials";
+import bcrypt from "bcrypt";
+import dbConnect from "../../../../utils/db-connection";
 
 const options = {
   providers: [
@@ -12,63 +10,85 @@ const options = {
         username: {
           label: "Username :",
           type: "text",
-          placeholder: "Username"
+          placeholder: "Username",
         },
         password: {
           label: "Password :",
           type: "password",
-          placeholder: "Password"
-        }
+          placeholder: "Password",
+        },
       },
       async authorize(credentials) {
         try {
-          const [results, field] = await dbConnect('pegasus').query('SELECT username, password, name FROM users WHERE username = ?', [credentials.username])
+          const [results] = await dbConnect("pegasus").query(
+            "SELECT * FROM users WHERE username = ?",
+            [credentials.username]
+          );
+
           if (results.length === 0) {
-            return null
+            return null; // User not found
           }
-          const user = results[0]
-          const hashedPassword = crypto.createHash('md5').update(credentials.password).digest('hex');
-          
-          const passwordMatch = (hashedPassword === user.password)
+
+          const user = results[0];
+
+          // Compare password using bcrypt
+          const passwordMatch = await bcrypt.compare(credentials.password, user.password);
+
           if (!passwordMatch) {
-            return null
+            return null; // Invalid password
           }
-      
-          return { name: user.name, email: user.username, client_name: user.client_name }
+
+          // Successful authentication
+          return {
+            name: user.name,
+            email: user.email,
+            token: user.token,
+            auth_id: user.auth_id,
+          };
         } catch (error) {
-          console.error('Error occurred during authorization:', error)
-          return null
+          console.error("Error occurred during authorization:", error);
+          return null;
         } finally {
-          dbConnect('pegasus').releaseConnection()
-          // conn.close()
+          dbConnect("pegasus").releaseConnection();
         }
-      }
-    })
+      },
+    }),
   ],
 
   pages: {
-    signIn: '/auth'
+    signIn: "/auth",
   },
 
   callbacks: {
-		async jwt({ token, user }) {
-			user && (token.user = user)
-			return token
-		},
-		async session({ session, token }) {
-			session.user = token.user
-			return session
-		},
-	},
-
+    async jwt({ token, user }) {
+      if (user) {
+        token.user = {
+          name: user.name,
+          email: user.email,
+          token: user.token,
+          auth_id: user.auth_id,
+        };
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      if (token.user) {
+        session.user = {
+          name: token.user.name,
+          email: token.user.email,
+          token: token.user.token,
+          auth_id: token.user.auth_id,
+        };
+      }
+      return session;
+    },
+  },
 
   session: {
-    strategy: 'jwt',
+    strategy: "jwt",
     updateAge: 60 * 60,
     maxAge: 60 * 60 * 8,
   },
+};
 
-
-}
-
-export default options
+export default options;

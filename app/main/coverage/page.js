@@ -4,26 +4,26 @@ import React, { useEffect, useRef, useState } from 'react'
 import GoogleMaps from '../../components/googlemap';
 import { Input } from 'antd';
 import { Autocomplete } from '@react-google-maps/api';
-import { useSession } from 'next-auth/react';
 import { message } from 'antd';
 import Table from './components/table';
+import { useSessionContext } from "@/app/context/session-provider";
 
 const CheckCoverage = () => {
-  const { data: session, status} = useSession()
+  const session = useSessionContext()
   const [isActive, setIsActive] = useState('Location')
   const [isGoogleLoaded, setIsGoogleLoaded] = useState(false); 
   
   const [center, setCenter] = useState({ lat: -6.2, lng: 106.8 });
   const [markerPosition, setMarkerPosition] = useState({ lat: -6.2, lng: 106.8 });
   const [radius, setRadius] = useState({ lng: -18.15, lat: 29.73} )
-
   const [directions, setDirections] = useState(null);
-  const [destinationFAT, setDestinationFAT] = useState({})
   
   const [address, setAddress] = useState('')
   const [homepass, setHomepass] = useState('')
   const [sampleFAT, setSampleFAT] = useState([]);
   const [loading, setLoading] = useState(false)
+
+  const [showOrderCreation, setShowOrderCreation] = useState(true);
 
   const autocompleteRef = useRef(null);
 
@@ -158,7 +158,6 @@ const CheckCoverage = () => {
         message.success('Area covered!')
         const nearbyFAT = await onCheckRouteDistance(data)
         onCheckAvailability(nearbyFAT)
-        // console.log(nearbyFAT)
         return
       } else {
         message.warning('Area Not Covered!');
@@ -198,12 +197,11 @@ const CheckCoverage = () => {
   
   // Handle check homepass availability
   const onCheckAvailability = async (dataFAT) => {
-    console.log(dataFAT)
     for (const i of dataFAT) {
       try {
         setLoading(true);
   
-        const response = await fetch(`/api/coverage?query=check_availability&fatid=${i.fatid}`);
+        const response = await fetch(`/api/coverage/check_availability?fatid=${i.fatid}`);
         if (!response.ok) {
           throw new Error(`Failed to fetch data. Status: ${response.status}, FATID: ${i.fatid}`);
         }
@@ -211,6 +209,7 @@ const CheckCoverage = () => {
         const data = await response.json();
   
         if (data.length > 0) {
+          data[0].distances = `${i.distance} m`;
           message.success({ content: `Homepass available for FATID: ${i.fatid}` });
           setHomepass(data[0]);
   
@@ -253,28 +252,31 @@ const CheckCoverage = () => {
 
 
   return (
-    <div className='flex h-screen p-2 pt-14 shadow-md bg-slate-300'>
+    <div className='flex h-screen shadow-md bg-slate-300 
+      sm:p-2 sm:pt-14'
+    >
       {/* h-[calc(100vh_-_.5rem)]  */}
-      <div className='w-80 h-full rounded-l-lg border-l-2 border-y-2 border-white bg-white  sm:block'>
-        <div className='flex justify-evenly p-2 text-sm font-bold text-white'>
+      <div className='absolute top-20 left-1/2 transform -translate-x-1/2 w-80 h-fit rounded-lg border-2 border-white bg-amtblue/10 shadow-md backdrop-blur-md z-[990]
+        sm:static sm:h-full sm:translate-x-0 sm:rounded-none sm:rounded-l-lg sm:shadow-none sm:bg-slate-50'>
+        <div className='flex justify-evenly p-2 font-bold text-white'>
           <div
             onClick={() => setIsActive('Location')} 
-            className={`w-full h-fit p-1.5 text-center text-xs rounded-l-lg ${isActive === 'Location' ? 'from-blue-500 to-amtblue' : 'from-slate-200 to-slate-300'} border-l-2 border-y-2 border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
+            className={`w-full h-fit p-1 sm:p-1.5 text-center rounded-l-lg ${isActive === 'Location' ? 'from-blue-500 to-amtblue' : 'from-slate-300 to-slate-400'} sm:border-l-2 sm:border-y-2 sm:border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
           >
-            <h2 className='text-xs'>Location</h2>
+            <h2 className='text-sm sm:text-xs'>Location</h2>
           </div>
           <div
             onClick={() => setIsActive('Address')} 
-            className={`w-full h-fit p-1.5 text-center text-xs rounded-r-lg ${isActive === 'Address' ? 'to-blue-500 from-amtblue' : 'from-slate-200 to-slate-300'} border-r-2 border-y-2 border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
+            className={`w-full h-fit p-1 sm:p-1.5 text-center rounded-r-lg ${isActive === 'Address' ? 'to-blue-500 from-amtblue' : 'from-slate-400 to-slate-300'} sm:border-r-2 sm:border-y-2 sm:border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
             >
-            <h2 className='text-xs'>Address</h2>
+            <h2 className='text-sm sm:text-xs'>Address</h2>
           </div>
         </div>
         
         {isActive == 'Location' && isGoogleLoaded
           ? 
-            <div className='flex flex-col h-[calc(100vh_-_8rem)] p-2 overflow-y-auto smooth-scrollbar'>
-              <h3 className='p-1 text-xs font-bold text-slate-500'>Find Location</h3>
+            <div className='flex flex-col p-2 overflow-y-auto smooth-scrollbar sm:h-[calc(100vh_-_8rem)]'>
+              <h3 className='p-1 text-xs font-bold text-slate-500 hidden sm:block'>Find Location</h3>
               <Autocomplete
                 onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
                 onPlaceChanged={onPlaceChanged}
@@ -292,12 +294,22 @@ const CheckCoverage = () => {
               <button 
                 onClick={onCheckCoverage}
                 disabled={loading}
-                className='relative place-self-center w-fit px-4 py-1.5 my-4 rounded-full shadow-sm text-xxs font-bold text-center text-white bg-gradient-to-br from-lime-500 to-teal-600 disabled:text-lime-300 disabled:cursor-not-allowed transition-all duration-500 hover:shadow-lg hover:scale-105'
+                className='relative place-self-center w-fit px-4 py-1 mt-3 rounded-full shadow-sm text-xs font-bold text-center sm:py-1.5 sm:my-4 sm:text-xxs 
+                  text-white bg-gradient-to-br from-lime-500 to-teal-600 
+                  disabled:text-lime-300 disabled:cursor-not-allowed transition-all duration-500 hover:shadow-lg hover:scale-105'
               >
                 {loading ? 'Checking...' : 'Check Coverage'} 
               </button>
 
-              {Object.keys(homepass).length > 0 && <Table datas={homepass} session={session} />}
+              {Object.keys(homepass).length > 0 && 
+                <Table 
+                  datas={homepass}
+                  markerPosition={markerPosition} 
+                  session={session}
+                  showOrderCreation={showOrderCreation}
+                  setShowOrderCreation={setShowOrderCreation} 
+                />
+              }
             </div> 
           :
             <div className='p-4'>
@@ -305,8 +317,8 @@ const CheckCoverage = () => {
             </div>
         }
       </div>
-      <div className='relative flex-1 rounded-r-lg border-2 border-white overflow-hidden'>
-        <div className={`${loading ? 'loading p-60 z-50 rounded-full shadow-md backdrop-blur-md bg-amtorange/10' : ''}`} />
+      <div className='relative flex-1 rounded-r-lg border-white overflow-hidden sm:border-2'>
+        <div className={`${loading ? 'loading p-20 sm:p-40 z-50 rounded-full shadow-md backdrop-blur-md bg-amtblue/10' : ''}`} />
         <GoogleMaps 
           center={center} 
           markerPosition={markerPosition}
