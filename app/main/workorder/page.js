@@ -36,6 +36,7 @@ const WorkOrder = () => {
       const response = await axios.post('/api/wo_ticket_list', {
         username: session?.user?.name,
         password: 'test',
+        type: 'orders'
       });
       return response.data;
     } catch (error) {
@@ -46,7 +47,6 @@ const WorkOrder = () => {
     }
   }
   
-
   useEffect(() => {
     const fetchData = async () => {
       try {

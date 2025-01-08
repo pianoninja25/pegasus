@@ -252,9 +252,7 @@ const CheckCoverage = () => {
 
 
   return (
-    <div className='flex h-screen shadow-md bg-slate-300 
-      sm:p-2 sm:pt-14'
-    >
+    <div className='flex h-screen shadow-md bg-slate-300 sm:p-2 sm:pt-14'>
       {/* h-[calc(100vh_-_.5rem)]  */}
       <div className='absolute top-20 left-1/2 transform -translate-x-1/2 w-80 h-fit rounded-lg border-2 border-white bg-amtblue/10 shadow-md backdrop-blur-md z-[990]
         sm:static sm:h-full sm:translate-x-0 sm:rounded-none sm:rounded-l-lg sm:shadow-none sm:bg-slate-50'>

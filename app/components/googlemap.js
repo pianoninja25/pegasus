@@ -58,7 +58,7 @@ const GoogleMapComponent = ({ center, markerPosition, radius, setRadius, onMarke
               position={i}
               onClick={() => setRadius({ lat: i.lat, lng: i.lng })}
               icon={{
-                url: 'http://localhost:4002/fat-green.png',
+                url: '/fat-green.png',
                 scaledSize: new window.google.maps.Size(25, 30),
                 // anchor: new window.google.maps.Point(35, 35),
               }}
