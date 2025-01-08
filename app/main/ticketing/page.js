@@ -53,7 +53,6 @@ const Ticketing = () => {
       try {
         const fetchedData = await getData();
         setDatas(fetchedData);
-        console.log(fetchedData)
       } catch (error) {
         console.error('Failed to fetch token:', error);
       }
@@ -89,6 +88,13 @@ const Ticketing = () => {
     return matchesSearch && matchesStatus;
   });
 
+
+  if (status === 'loading') {
+    return (
+      <div className='loading' />
+    )
+  }
+
   return (
     <div className='min-h-screen pt-20 bg-slate-100 pb-20'>
       {!isDesktop && datas.length>=0 && (
@@ -110,7 +116,7 @@ const Ticketing = () => {
 
       {isDesktop && (
         <div className='relative min-h-80 m-10 mt-0 mb-4 p-8 pt-6 pb-0 shadow-sm rounded-xl bg-white'>
-          {!session || loading || filteredData.length<1
+          {loading
           ? <div className='loading' />
             : 
             <>

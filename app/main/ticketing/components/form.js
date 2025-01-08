@@ -2,6 +2,7 @@
 
 import { Modal, Input, Select, Form, Button, message } from 'antd';
 import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
 const { TextArea } = Input;
 
@@ -10,55 +11,45 @@ const FormTicket = ({ user, setRefresh, loading, setLoading, isDesktop }) => {
   const [form] = Form.useForm();
 
 
-  const getToken = async (username, password) => {
-    const response = await fetch('http://localhost:8002/token', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ username, password }),
-    });
-  
-    if (!response.ok) {
-      throw new Error('Failed to get token');
-    }
-  
-    const tokenData = await response.json();
-    return tokenData.access_token; // Assuming the token is in `tokenData.token`
-  };
 
-  const createTicket = async (token, formData) => {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}:8002/create_ticket`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${token}`,
-      },
-      body: JSON.stringify(formData),
-    });
-  
-    if (!response.ok) {
-      throw new Error('Failed to create ticket');
+  async function getData(payload) {
+    try {
+      setLoading(true)
+      const response = await axios.post('/api/ticket_creation', {
+        username: user,
+        password: 'test',
+        // payload: {
+        //   customerId: 'A12345',
+        //   subject: 'POP',
+        //   tier1: 'Access Issue',
+        //   tier2: 'DW Cable',
+        //   description: 'asd'
+        // }
+        payload: payload
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Error fetching token:', error);
+      throw error;
+    } finally {
+      setLoading(false)
     }
-  
-    const ticketData = await response.json();
-    return ticketData;
-  };
-  
+  }
+
   const handleOk = async () => {
     try {
-      const values = await form.validateFields();
-      console.log('Form Data:', values);
-      
       setLoading(true);
-      const username = user;
-      const password = 'ioh456#';
-      const token = await getToken(username, password);
-
-      const ticketData = await createTicket(token, values);
+      const formData = await form.validateFields();
+      const payload = {
+        customerId: formData.customerId,
+        subject: formData.subject,
+        tier1: formData.tier1,
+        tier2: formData.tier2,
+        description: formData.description,
+      };
+      const ticketData = await getData(payload)
       message.success(`Ticket ID: ${ticketData.result.amt_ticket_id}`);
       setRefresh(ticketData)
-  
       setIsModalOpen(false);
       form.resetFields();
     } catch (error) {
@@ -69,32 +60,6 @@ const FormTicket = ({ user, setRefresh, loading, setLoading, isDesktop }) => {
       setLoading(false);
     }
   };
- 
-  // const handleOk = async () => {
-  //   try {
-  //     const values = await form.validateFields();
-  //     console.log('Form Data:', values);
-      
-  //     setLoading(true);
-  
-  //   } catch (info) {
-  //     console.error('Validation Failed:', info);
-  //   }
-  // };
-
-  // const handleOk = () => {
-  //   form
-  //     .validateFields()
-  //     .then(values => {
-  //       console.log('Form Data:', values);
-  //       form.resetFields();
-
-  //       setIsModalOpen(false);
-  //     })
-  //     .catch(info => {
-  //       console.error('Validation Failed:', info);
-  //     });
-  // };
 
   const handleCancel = () => {
     form.resetFields();

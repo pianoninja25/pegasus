@@ -25,28 +25,26 @@ async function getToken(username, password) {
 export async function POST(req) {
   try {
     const body = await req.json();
-    const { username, password, type } = body;
+    const { username, password, payload } = body;
+
 
     if (!username || !password) {
       throw new Error('username and password are required!');
     }
 
     const token = await getToken(username, password);
-
-    // Make another API request with the token
-    const apiResponse = await fetch(`${API_URL}/${type}?client_name=${username}`, {
-      method: 'GET',
+    const apiResponse = await fetch(`${API_URL}/create_ticket`, {
+      method: 'POST',
       headers: {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
-      }
+      },
+      body: JSON.stringify(payload),
     });
 
     const data = await apiResponse.json();
-    
     return NextResponse.json(data, { status: apiResponse.status });
   } catch (error) {
-    console.error('Error:', error);
     return NextResponse.json(
       { error: error.message || 'Failed to fetch data' },
       { status: 500 }

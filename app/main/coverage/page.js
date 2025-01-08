@@ -256,63 +256,47 @@ const CheckCoverage = () => {
       {/* h-[calc(100vh_-_.5rem)]  */}
       <div className='absolute top-20 left-1/2 transform -translate-x-1/2 w-80 h-fit rounded-lg border-2 border-white bg-amtblue/10 shadow-md backdrop-blur-md z-[990]
         sm:static sm:h-full sm:translate-x-0 sm:rounded-none sm:rounded-l-lg sm:shadow-none sm:bg-slate-50'>
-        <div className='flex justify-evenly p-2 font-bold text-white'>
-          <div
-            onClick={() => setIsActive('Location')} 
-            className={`w-full h-fit p-1 sm:p-1.5 text-center rounded-l-lg ${isActive === 'Location' ? 'from-blue-500 to-amtblue' : 'from-slate-300 to-slate-400'} sm:border-l-2 sm:border-y-2 sm:border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
-          >
-            <h2 className='text-sm sm:text-xs'>Location</h2>
-          </div>
-          <div
-            onClick={() => setIsActive('Address')} 
-            className={`w-full h-fit p-1 sm:p-1.5 text-center rounded-r-lg ${isActive === 'Address' ? 'to-blue-500 from-amtblue' : 'from-slate-400 to-slate-300'} sm:border-r-2 sm:border-y-2 sm:border-white bg-gradient-to-br transition-colors duration-500 hover:cursor-pointer`}
-            >
-            <h2 className='text-sm sm:text-xs'>Address</h2>
-          </div>
-        </div>
         
-        {isActive == 'Location' && isGoogleLoaded
-          ? 
-            <div className='flex flex-col p-2 overflow-y-auto smooth-scrollbar sm:h-[calc(100vh_-_8rem)]'>
-              <h3 className='p-1 text-xs font-bold text-slate-500 hidden sm:block'>Find Location</h3>
-              <Autocomplete
-                onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
-                onPlaceChanged={onPlaceChanged}
-                restrictions={{ country: 'ID' }}
-              >
-                <Input 
-                  placeholder="Find Location" 
-                  className='text-xs break-words' 
-                  options={autocompleteOptions} 
-                  value={address} 
-                  onChange={(e) => setAddress(e.target.value)}
-                  allowClear
-                />
-              </Autocomplete>
-              <button 
-                onClick={onCheckCoverage}
-                disabled={loading}
-                className='relative place-self-center w-fit px-4 py-1 mt-3 rounded-full shadow-sm text-xs font-bold text-center sm:py-1.5 sm:my-4 sm:text-xxs 
-                  text-white bg-gradient-to-br from-lime-500 to-teal-600 
-                  disabled:text-lime-300 disabled:cursor-not-allowed transition-all duration-500 hover:shadow-lg hover:scale-105'
-              >
-                {loading ? 'Checking...' : 'Check Coverage'} 
-              </button>
+        
+        {isGoogleLoaded && (
+          <div className='flex flex-col p-2 overflow-y-auto smooth-scrollbar sm:h-[calc(100vh_-_8rem)]'>
+            <h3 className='p-1 text-xs font-bold text-slate-500'>Find Location</h3>
+            <Autocomplete
+              onLoad={(autocomplete) => (autocompleteRef.current = autocomplete)}
+              onPlaceChanged={onPlaceChanged}
+              restrictions={{ country: 'ID' }}
+            >
+              <Input 
+                placeholder="Find Location" 
+                className='text-xs break-words' 
+                options={autocompleteOptions} 
+                value={address} 
+                onChange={(e) => setAddress(e.target.value)}
+                allowClear
+              />
+            </Autocomplete>
+            <button 
+              onClick={onCheckCoverage}
+              disabled={loading}
+              className='relative place-self-center w-fit px-4 py-1 mt-3 rounded-full shadow-sm text-xs font-bold text-center sm:py-1.5 sm:my-4 sm:text-xxs 
+                text-white bg-gradient-to-br from-lime-500 to-teal-600 
+                disabled:text-lime-300 disabled:cursor-not-allowed transition-all duration-500 hover:shadow-lg hover:scale-105'
+            >
+              {loading ? 'Checking...' : 'Check Coverage'} 
+            </button>
 
-              {Object.keys(homepass).length > 0 && 
-                <Table 
-                  datas={homepass}
-                  markerPosition={markerPosition} 
-                  session={session}
-                  showOrderCreation={showOrderCreation}
-                  setShowOrderCreation={setShowOrderCreation} 
-                />
-              }
-            </div> 
-          :
-            <div className='p-4'>
-              TEST
-            </div>
+            {Object.keys(homepass).length > 0 && 
+              <Table 
+                datas={homepass}
+                markerPosition={markerPosition} 
+                session={session}
+                showOrderCreation={showOrderCreation}
+                setShowOrderCreation={setShowOrderCreation} 
+              />
+            }
+          </div>
+        )
+          
         }
       </div>
       <div className='relative flex-1 rounded-r-lg border-white overflow-hidden sm:border-2'>

@@ -30,7 +30,7 @@ export async function POST(req) {
 
 
     if (!email || !password) {
-      throw new Error('Email and password are required');
+      throw new Error('Email and password are required!');
     }
 
     const token = await getToken(email, password);
