@@ -18,13 +18,6 @@ const FormTicket = ({ user, setRefresh, loading, setLoading, isDesktop }) => {
       const response = await axios.post('/api/ticket_creation', {
         username: user,
         password: 'test',
-        // payload: {
-        //   customerId: 'A12345',
-        //   subject: 'POP',
-        //   tier1: 'Access Issue',
-        //   tier2: 'DW Cable',
-        //   description: 'asd'
-        // }
         payload: payload
       });
       return response.data;

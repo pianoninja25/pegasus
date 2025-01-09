@@ -59,7 +59,7 @@ const Ticketing = () => {
     };
   
     fetchData();
-  }, [session?.user?.name]);
+  }, [session?.user?.name, refresh]);
 
 
   

@@ -13,7 +13,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
     return `${session.user.name.slice(0, 3).toUpperCase()}-${moment().valueOf()}`;
   });
 
-  const qosOptions = [
+  const packageOptions = [
     {
       "ProductName": "4 Mbps"
     },
@@ -172,7 +172,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
             "productSpecification": {
               "id": "205",
               "href": "/productCatalogManagement/v5/productSpecification/153",
-              "name": values['QoS'],
+              "name": values['Package'],
               "version": "1",
               "@type": "ProductSpecificationRef"
             },
@@ -313,19 +313,19 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
             
             <tr>
               <td className="w-[35%] px-2 py-1 text-right font-bold border-b border-slate-50 bg-slate-200">
-                QoS
+                Package
               </td>
               <td className="w-[65%] p-0 border border-slate-200 bg-slate-50 overflow-hidden">
                 <Form.Item
-                    name='QoS'
+                    name='Package'
                     className='p-0 py-0.5 m-0 mx-1'
-                    rules={[{ required: true, message: `QoS is required!` }]}
+                    rules={[{ required: true, message: `Package is required!` }]}
                   >
                   <Select
                     className="w-full"
-                    placeholder="Select QoS"
+                    placeholder="Select Package"
                     showSearch
-                    options={qosOptions.map((item) => ({
+                    options={packageOptions.map((item) => ({
                       label: item.ProductName,
                       value: item.ProductName,
                     }))}

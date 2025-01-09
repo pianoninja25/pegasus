@@ -7,6 +7,10 @@ import { Autocomplete } from '@react-google-maps/api';
 import { message } from 'antd';
 import Table from './components/table';
 import { useSessionContext } from "@/app/context/session-provider";
+import { fetchSampleFAT } from '@/utils/get-sitelist';
+
+
+
 
 const CheckCoverage = () => {
   const session = useSessionContext()
@@ -37,24 +41,42 @@ const CheckCoverage = () => {
     strictBounds: true,
   };
   
+  // useEffect(() => {
+  //   const fetchCoverageData = async () => {
+  //     try {
+  //       const response = await fetch(`/api/coverage?query=sample_client_sitelist&client=${session?.user.name}`);
+  //       const data = await response.json();
+  //       const fetchedMarkers = data.map(i => ({
+  //         lat: i.geolocation.y,
+  //         lng: i.geolocation.x,
+  //       }));
+  //       setSampleFAT(fetchedMarkers);
+  //     } catch (error) {
+  //       console.error("Error fetching coverage data:", error);
+  //     }
+  //   };
+  //   fetchCoverageData();
+  // }, [session]);
+
+
   // Show sample nearby FAT to test
   useEffect(() => {
-    const fetchCoverageData = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch(`/api/coverage?query=sample_client_sitelist&client=${session?.user.name}`);
-        const data = await response.json();
+        const data = await fetchSampleFAT(session?.user.name); // Fetch sample FAT data for the client
         const fetchedMarkers = data.map(i => ({
           lat: i.geolocation.y,
           lng: i.geolocation.x,
         }));
         setSampleFAT(fetchedMarkers);
       } catch (error) {
-        console.error("Error fetching coverage data:", error);
+        console.error('Error fetching sample FAT:', error);
       }
     };
-    fetchCoverageData();
+    if (session?.user.name) {
+      fetchData();
+    }
   }, [session]);
-
 
   // Get GPS current position
   useEffect(() => {
@@ -300,7 +322,8 @@ const CheckCoverage = () => {
         }
       </div>
       <div className='relative flex-1 rounded-r-lg border-white overflow-hidden sm:border-2'>
-        <div className={`${loading ? 'loading p-20 sm:p-40 z-50 rounded-full shadow-md backdrop-blur-md bg-amtblue/10' : ''}`} />
+        {/* <div className={`${loading ? 'loading p-20 sm:p-40 z-50 rounded-full shadow-md backdrop-blur-md bg-amtblue/10' : ''}`} /> */}
+        <div className='loading' />
         <GoogleMaps 
           center={center} 
           markerPosition={markerPosition}

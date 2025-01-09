@@ -16,10 +16,10 @@ const GoogleMapComponent = ({ center, markerPosition, radius, setRadius, onMarke
   });
 
   // Handle loading error
-  if (loadError) return <div>Error loading maps</div>;
+  if (loadError) return <div className='p-2'>Error loading maps</div>;
   
   // Wait until the script is loaded
-  if (!isLoaded) return <div>Loading Maps...</div>;
+  if (!isLoaded && !sampleFAT.length>0) return <div className='p-2'>Loading Maps...</div>;
 
   return (
     <GoogleMap
