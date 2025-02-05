@@ -65,7 +65,7 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
             name="username"
             rules={isForEdit ? [] : [
               { required: true, message: "Tenant Name is required" },
-              { pattern: /^[^\s]*$/, message: "Tenant Name cannot contain spaces" }
+              { pattern: /^[^\s]*$/, message: "Tenant name cannot contain spaces" }
             ]}
           >
             <Input
@@ -79,10 +79,10 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
           <Form.Item
             label="Company Name"
             name="name"
-            rules={isForEdit ? [] : [{ required: true, message: "Name is required" }]}
+            rules={[{ required: true, message: "Company name is required" }]}
           >
             <Input
-              placeholder="Enter Name"
+              placeholder="Enter company name"
             />
           </Form.Item>
 
@@ -91,12 +91,10 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
           <Form.Item
             label="Email"
             name="email"
-            rules={isForEdit 
-              ? [{ type: "email", message: "Enter a valid email" }] 
-              : [
-                  { required: true, message: "Email is required" },
-                  { type: "email", message: "Enter a valid email" }
-                ]}
+            rules={[
+              { required: true, message: "Email is required" },
+              { type: "email", message: "Enter a valid email" }
+            ]}
           >
             <Input placeholder="Enter email" />
           </Form.Item>
@@ -106,7 +104,7 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
           <Form.Item
             label="Pass ID"
             name="pass_id"
-            rules={isForEdit ? [] : [{ required: true, message: "Pass ID is required" }]}
+            rules={[{ required: true, message: "Pass id is required" }]}
           >
             <Input placeholder="Enter pass id" />
           </Form.Item>
@@ -115,7 +113,7 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
           <Form.Item
             label="Auth ID"
             name="auth_id"
-            rules={isForEdit ? [] : [{ required: true, message: "Auth ID is required" }]}
+            rules={[{ required: true, message: "Auth id is required" }]}
           >
             <Input placeholder="Enter authentication id" />
           </Form.Item>
@@ -131,7 +129,6 @@ const ModalTenant = ({ isModalOpen, setIsModalOpen, loading, setLoading, setRefr
           >
             <InputNumber
               placeholder="Enter scan radius"
-              min={100}
               style={{ width: '100%' }}  // Ensure the input takes full width of the container
             />
           </Form.Item>

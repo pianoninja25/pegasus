@@ -32,11 +32,11 @@ async function refreshAccessToken(session) {
 
       } else {
         console.error('Failed to refresh token');
-        // signOut(); // Uncomment to log out if the refresh fails
+        signOut(); 
       }
     } catch (error) {
       console.error('Error refreshing token:', error);
-      // signOut(); // Uncomment to log out if an error occurs
+      signOut();
     }
   }
 }

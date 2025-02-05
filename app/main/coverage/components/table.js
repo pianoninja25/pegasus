@@ -4,11 +4,12 @@ import moment from 'moment';
 import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 
 const Table = ({ datas, markerPosition, user, showOrderCreation, setShowOrderCreation }) => {
+  console.log('ini', user)
   const [form] = Form.useForm();
   const [completionDate, setCompletionDate] = useState(null);
 
   const [generateCustomerId] = useState(() => {
-    return `${user.tenant.slice(0, 3).toUpperCase()}-${moment().valueOf()}`;
+    return `${user.prefix}-${moment().valueOf()}`;
   });
 
   const packageOptions = [

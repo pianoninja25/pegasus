@@ -74,6 +74,8 @@ const options = {
             email: user.email,
             pass_id: user.pass_id,
             auth_id: user.auth_id,
+            radius_meter: user.radius_meter,
+            prefix: user.prefix,
             access_token: access_token,
             refresh_token: refresh_token,
 
@@ -104,6 +106,8 @@ const options = {
           email: user.email,
           pass_id: user.pass_id,
           auth_id: user.auth_id,
+          radius_meter: user.radius_meter,
+          prefix: user.prefix,
           access_token: user.access_token,
           refresh_token: user.refresh_token,
         };

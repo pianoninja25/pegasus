@@ -174,19 +174,16 @@ const MapContainer = ({ polygons }) => {
 
   async function getFAT(psitelist) {
     try {
+      if (user && isTokenExpired(user?.access_token)) {
+        await refreshAccessToken(user);
+      }
       const response = await axios.post(`${process.env.NEXT_PUBLIC_PEGASUS_API}/get-fat`, 
-        {
-          sitelist : psitelist
-        },
-        {
-          headers: {
-            Authorization: `Bearer ${user.access_token}`,
-          },
-        }
+        { sitelist : psitelist },
+        { headers: { Authorization: `Bearer ${user.access_token}` }}
       );
       return response.data;
     } catch (error) {
-      console.error('Error fetching:', error);
+      console.error('Error fetching fat:', error);
       throw error;
     } 
   }
@@ -203,19 +200,23 @@ const MapContainer = ({ polygons }) => {
     }
   }
 
-  async function getNearbyFAT() {
+  async function getNearbyFAT(session, lat, long) {
     try {
-      const response = await axios.get('/api/coverage', {
-        params: {
-          query: 'check_coverage',
-          client: user.tenant,
-          long: markerPosition?.lng,
-          lat: markerPosition?.lat
-        }
-      });
+      if (session && isTokenExpired(session.access_token)) {
+        await refreshAccessToken(session);
+      }
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_PEGASUS_API}/check-coverage`, 
+        {
+          tenant: session.tenant,
+          lat: lat,
+          long: long,
+          scan_radius: session.radius_meter
+        },
+        { headers: { Authorization: `Bearer ${session.access_token}` }}
+      );
       return response.data;
     } catch (error) {
-      console.error('Error fetching:', error);
+      console.error('Error fetching near fat:', error);
       throw error;
     } 
   }
@@ -232,9 +233,8 @@ const MapContainer = ({ polygons }) => {
       } 
       // IF THE LOCATION OUTSIDE BOUNDARIES
       else if (sitelist.status === 404) {
-        const nearfatlist = await getNearbyFAT()
+        const nearfatlist = await getNearbyFAT(user, markerPosition?.lat, markerPosition?.lng)
         const nearmatrix = await getGoogleMatrix(nearfatlist)
-        console.log(nearfatlist)
         if(nearfatlist.length > 0) {
           onCheckAvailability(nearmatrix, 'Maybe')
         } else {
@@ -259,8 +259,6 @@ const MapContainer = ({ polygons }) => {
     }
   };
 
-
-  // Handle check homepass availability
   const onCheckAvailability = async (dataFAT, pstatus) => {
     for (const i of dataFAT) {
       try {
