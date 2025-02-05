@@ -11,6 +11,7 @@ import { fetchSampleFAT } from '@/utils/get-sitelist';
 import axios from 'axios';
 import { FaCheck } from "react-icons/fa";
 import { useUser } from '@/app/context/useUser';
+import { isTokenExpired, refreshAccessToken } from '@/app/service/token';
 
 
 
@@ -46,44 +47,6 @@ const MapContainer = ({ polygons }) => {
     strictBounds: true,
   };
   
-  // useEffect(() => {
-  //   const fetchCoverageData = async () => {
-  //     try {
-  //       const response = await fetch(`/api/coverage?query=sample_client_sitelist&client=${session?.user.name}`);
-  //       const data = await response.json();
-  //       const fetchedMarkers = data.map(i => ({
-  //         lat: i.geolocation.y,
-  //         lng: i.geolocation.x,
-  //       }));
-  //       setSampleFAT(fetchedMarkers);
-  //     } catch (error) {
-  //       console.error("Error fetching coverage data:", error);
-  //     }
-  //   };
-  //   fetchCoverageData();
-  // }, [session]);
-
-
-  // Show sample nearby FAT to test
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     try {
-  //       const data = await fetchSampleFAT(session?.user.name); // Fetch sample FAT data for the client
-  //       const fetchedMarkers = data.map(i => ({
-  //         lat: i.geolocation.y,
-  //         lng: i.geolocation.x,
-  //       }));
-  //       setSampleFAT(fetchedMarkers);
-  //     } catch (error) {
-  //       console.error('Error fetching sample FAT:', error);
-  //     }
-  //   };
-  //   if (session?.user.name) {
-  //     fetchData();
-  //   }
-  // }, [session]);
-
-
 
   /* 
   ------------------------
@@ -191,17 +154,16 @@ const MapContainer = ({ polygons }) => {
   
   async function getBoundaries() {
     try {
+      if (user && isTokenExpired(user?.access_token)) {
+        await refreshAccessToken(user);
+      }
       const response = await axios.post(`${process.env.NEXT_PUBLIC_PEGASUS_API}/check-boundary`, 
         {
           lon: markerPosition.lng,
           lat: markerPosition.lat,
           tenant: user.tenant
         },
-        {
-          headers: {
-            Authorization: `Bearer ${user.access_token}`,
-          },
-        }
+        { headers: { Authorization: `Bearer ${user.access_token}` }}
       );
       return response.data;
     } catch (error) {

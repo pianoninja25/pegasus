@@ -3,7 +3,6 @@ import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 
 const Filter = ({ handleSearchChange, statusFilter, setStatusFilter, statusCounts }) => {
-  console.log('A', statusCounts)
   return (
     <div className='mb-4'>
       <div className="flex gap-2 items-center px-5 sm:px-0 pb-3 sm:max-w-[17.5rem]">

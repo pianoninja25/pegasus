@@ -39,13 +39,11 @@ const WorkOrder = () => {
     try {
       setLoading(true)
       if (session && isTokenExpired(session?.access_token)) {
-        await refreshAccessToken();
+        await refreshAccessToken(session);
       }
-      const response = await axios.get(`${process.env.NEXT_PUBLIC_PEGASUS_API}/orders?auth_id=${session?.auth_id}`, {
-        headers: {
-          Authorization: `Bearer ${session?.access_token}`,
-        },
-      });
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_PEGASUS_API}/orders?auth_id=${session?.auth_id}`, 
+        { headers: { Authorization: `Bearer ${session?.access_token}` }}
+      );
       return response.data;
     } catch (error) {
       console.error('Error fetching:', error);

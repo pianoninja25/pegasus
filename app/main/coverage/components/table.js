@@ -4,9 +4,7 @@ import moment from 'moment';
 import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 
 const Table = ({ datas, markerPosition, user, showOrderCreation, setShowOrderCreation }) => {
-  console.log(user)
   const [form] = Form.useForm();
-  const [currentDate, setCurrentDate] = useState(null);
   const [completionDate, setCompletionDate] = useState(null);
 
   const [generateCustomerId] = useState(() => {
