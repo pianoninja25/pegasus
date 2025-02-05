@@ -4,33 +4,13 @@ import dbConnect from "@/utils/db-connection";
 
 export async function GET(req) {
   const pquery = req.nextUrl.searchParams.get("query");
-  const pclient = req.nextUrl.searchParams.get("client");
-  const plong = req.nextUrl.searchParams.get("long");
-  const plat = req.nextUrl.searchParams.get("lat");
-  const pfatid = req.nextUrl.searchParams.get("fatid");
-  const psitelist = req.nextUrl.searchParams.get("sitelist");
-  
+  const ptenant = req.nextUrl.searchParams.get("tenant");
 
   let q;
-  if(pquery === 'check_coverage') {
-    q = `CALL check_coverage('${pclient}', ${plong}, ${plat});`;
-  } 
-  else if(pquery === 'check_availability') {
-    q = `CALL check_availability('${pfatid}');`;
-  } 
-  else if(pquery === 'sample_client_sitelist') {
-    q = `CALL sample_client_sitelist('${pclient}');`;
+  if(pquery === 'test_geo') {
+    q = `CALL test_geo('${ptenant}');`;
   }
-  else if(pquery === 'find_fatid') {
-    // console.log(query, sitelist)
-    const arraysiteid = JSON.parse(psitelist)
-    const formattedsiteid = arraysiteid.map(id => `'${id}'`).join(', ');
-    q = `SELECT *, ST_ASTEXT(geolocation) 
-      FROM fat_list 
-      WHERE siteid IN (${formattedsiteid});
-    `
 
-  }
 
 
   // const session = await getServerSession(options);

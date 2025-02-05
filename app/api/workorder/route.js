@@ -16,7 +16,10 @@ async function getToken(email, password) {
   });
 
   if (!response.ok) {
-    throw new Error('Failed to retrieve token');
+    return NextResponse.json({
+      returnMessage: 'You are not authorized to create an order. Please check your token.',
+      statusCode: response.status,
+    }, { status: response.status });
   }
 
   const data = await response.json();

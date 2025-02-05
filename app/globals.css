@@ -125,7 +125,7 @@ th.ant-table-cell {
   font: .7rem Quicksand !important;
   font-weight: bold !important;
 }
-.ant-table-tbody, .ant-select-selection-item, .ant-select-item-option-content {
+.ant-table-tbody, .ant-select-item-option-content {
   font: .8rem Quicksand !important;
 }
 .ant-table-cell, .ant-table-cell-ellipsis{
@@ -160,15 +160,15 @@ th.ant-table-cell {
   z-index: 99999 !important;
 }
 
-.ant-select  {
-  @apply p-1 border-none;
+.formregist  {
+  @apply p-1 py-0.5 my-0.5 border-none;
 }
-.ant-select-selector > span {
+.formregist > .ant-select-selector > span {
   @apply !text-xs border-none -ml-1;
 }
 
-.ant-select-selector {
-  @apply !border-none shadow-sm;
+.formregist > .ant-select-selector {
+  @apply !border-none shadow-inner-dark;
 }
 
 
@@ -183,7 +183,7 @@ th.ant-table-cell {
 
 /* Antd Date Picker */
 .ant-picker {
-  @apply w-full font-quicksand p-0 my-1 px-2 border-none rounded-md shadow-sm text-xs bg-white;
+  @apply w-full font-quicksand py-0.5 px-2 my-1 border-none rounded-md shadow-inner-dark text-xs bg-white;
 }
 .ant-picker .ant-picker-input >input {
   @apply py-1 text-xs;
@@ -225,14 +225,29 @@ th.ant-table-cell {
   display: none !important;
 }
 
-.pac-container {
-  @apply px-2 pr-4 my-4 rounded-sm font-quicksand !w-inherit text-sm;
-}
-.pac-container {
-  @apply shadow-sm rounded-md pb-4;
+.pac-icon {
+  display: none;
 }
 
+.pac-item {
+  white-space: normal !important;
+  word-wrap: break-word;
+}
 
+.pac-container {
+  @apply !w-96 px-2 pr-4 pb-4 my-4 rounded-sm font-quicksand text-xxs shadow-sm ;
+}
+
+/* Reduce vertical spacing between autocomplete items */
+.pac-item {
+  @apply leading-3 py-2 text-[2px];
+
+}
+
+/* Optional: Adjust font size if necessary */
+.pac-item span {
+  font-size: 0.875rem;  /* Smaller font size if needed */
+}
 
 
 

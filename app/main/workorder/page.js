@@ -11,10 +11,14 @@ import { FaDownload } from 'react-icons/fa'
 import { useSessionContext } from "@/app/context/session-provider";
 import axios from 'axios'
 import { useSession } from 'next-auth/react'
+import { useUser } from '@/app/context/useUser'
+import { isTokenExpired, refreshAccessToken } from '@/app/service/token'
 
 const WorkOrder = () => {
   // const {session} = useSessionContext()
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
+  const { user: session, loadingSession, isAuthenticated } = useUser();
+  
   
 
   const [isDesktop, setIsDesktop] = useState(false)
@@ -30,17 +34,21 @@ const WorkOrder = () => {
   const [statusFilter, setStatusFilter] = useState('All');
   
 
+
   async function getData() {
     try {
       setLoading(true)
-      const response = await axios.post('/api/wo_ticket_list', {
-        username: session?.user?.name,
-        password: 'test',
-        type: 'orders'
+      if (session && isTokenExpired(session?.access_token)) {
+        await refreshAccessToken();
+      }
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_PEGASUS_API}/orders?auth_id=${session?.auth_id}`, {
+        headers: {
+          Authorization: `Bearer ${session?.access_token}`,
+        },
       });
       return response.data;
     } catch (error) {
-      console.error('Error fetching token:', error);
+      console.error('Error fetching:', error);
       throw error;
     } finally {
       setLoading(false)
@@ -50,17 +58,17 @@ const WorkOrder = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        if(session?.user.name) {
+        if(session?.name) {
           const fetchedData = await getData();
           setDatas(fetchedData);
         }
       } catch (error) {
-        console.error('Failed to fetch token:', error);
+        console.error('Failed to fetch:', error);
       }
     };
 
     fetchData();
-  }, [session?.user.name]);
+  }, [session?.name]);
 
   const handleSearchChange = (e) => {
     setSearchValue(e.target.value);
@@ -73,6 +81,7 @@ const WorkOrder = () => {
     },
     { All: 0 }
   );
+  
   const filteredData = datas?.filter((i) => {
     const matchesSearch =
       i.order_number.toLowerCase().includes(searchValue.toLowerCase()) ||
@@ -87,7 +96,7 @@ const WorkOrder = () => {
 
 
 
-  if (status === 'loading') {
+  if (loadingSession) {
     return (
       <div className='loading' />
     )
@@ -95,7 +104,7 @@ const WorkOrder = () => {
 
 
   return (
-    <div className='min-h-screen pt-20 bg-slate-100 pb-20'>
+    <div className='min-h-screen pt-20 bg-slate-100 pb-10'>
       {!isDesktop && datas.length>=0 && (
         <div className='sm:hidden'>
           <>

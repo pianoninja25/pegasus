@@ -3,6 +3,7 @@ import React from 'react';
 import { SearchOutlined } from '@ant-design/icons';
 
 const Filter = ({ handleSearchChange, statusFilter, setStatusFilter, statusCounts }) => {
+  console.log('A', statusCounts)
   return (
     <div className='mb-4'>
       <div className="flex gap-2 items-center px-5 sm:px-0 pb-3 sm:max-w-[17.5rem]">
@@ -35,17 +36,37 @@ const Filter = ({ handleSearchChange, statusFilter, setStatusFilter, statusCount
           Complete ({statusCounts?.Complete || 0})
         </button>
         <button 
-          onClick={() => setStatusFilter('Progress')} 
-          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Progress' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
+          onClick={() => setStatusFilter('In Progress')} 
+          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'In Progress' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
         >
-          Progress ({statusCounts?.Progress || 0})
+          In Progress ({statusCounts['In Progress'] || 0})
         </button>
+
+
         <button 
-          onClick={() => setStatusFilter('Awaiting')} 
-          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Awaiting' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
+          onClick={() => setStatusFilter('Awaiting Installation')} 
+          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Awaiting Installation' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
         >
-          Awaiting ({statusCounts?.Awaiting || 0})
+          Awaiting Installation ({statusCounts['Awaiting Installation'] || 0})
         </button>
+
+
+        <button 
+          onClick={() => setStatusFilter('Awaiting Schedule')} 
+          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Awaiting Schedule' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
+        >
+          Awaiting Schedule ({statusCounts['Awaiting Schedule'] || 0})
+        </button>
+
+
+        <button 
+          onClick={() => setStatusFilter('Scheduled')} 
+          className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Scheduled' ? 'bg-amtorange/80' : 'bg-slate-300'}`}
+        >
+          Scheduled ({statusCounts['Scheduled'] || 0})
+        </button>
+
+
         <button 
           onClick={() => setStatusFilter('Cancel')} 
           className={`p-1 px-2 text-xs shadow-sm rounded-sm sm:rounded-lg text-white hover:bg-amtorange ${statusFilter == 'Cancel' ? 'bg-amtorange/80' : 'bg-slate-300'}`}

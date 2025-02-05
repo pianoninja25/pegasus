@@ -65,10 +65,11 @@ const Header = ({ user }) => {
         {/* TEXT */}
         <nav
           className={`absolute top-1 right-4 flex-col sm:items-center gap-1 w-full max-w-40 h-fit pt-6 pb-6 rounded-md shadow-md backdrop-blur-md bg-gradient-to-b from-white/75 to-white/5 
-          sm:flex-row sm:justify-center sm:right-32 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
+          sm:flex-row sm:justify-center sm:right-40 sm:pt-1 sm:shadow-none sm:backdrop-blur-0 sm:bg-none
           ${open ? 'flex' : 'hidden sm:flex mr-10'}`}
         >
           {[
+            ['Home', '/main/home'],
             ['Coverage', '/main/coverage'],
             ['Workorder', '/main/workorder'],
             ['Ticketing', '/main/ticketing'],
@@ -78,7 +79,8 @@ const Header = ({ user }) => {
               key={title}
               href={url}
               className={`text-xs px-6 sm:px-4 p-1 font-quicksand font-semibold rounded-md drop-shadow-md text-amtblue sm:text-slate-200 hover:text-amtorange transition-all duration-500 hover:shadow-lg hover:scale-110 
-                ${url==pathname ? '!text-amtorange !font-bold' :''}`
+                ${url===pathname ? '!text-amtorange !font-bold' :''}
+                ${title==='Ticketing' || title==='Outage' ? '!opacity-50' : ''}`
               }
             >
               { title }
@@ -87,7 +89,7 @@ const Header = ({ user }) => {
 
           <button 
             onClick={() => signOut()} 
-            className='flex items-center justify-around gap-2 w-fit h-fit px-6 py-1.5 text-xs font-semibold drop-shadow-md text-amtblue sm:text-slate-200 hover:text-amtorange transition-all duration-500 hover:shadow-lg hover:scale-110'
+            className='flex items-center justify-around gap-2 w-fit h-fit px-3 py-1.5 text-xs font-semibold drop-shadow-md text-amtblue sm:text-slate-200 hover:text-amtorange transition-all duration-500 hover:shadow-lg hover:scale-110'
           >
             Logout 
             <IoLogOut size={18} />

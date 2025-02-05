@@ -30,14 +30,15 @@ export async function GET(req) {
 
   let conn;
   try {
-    conn = await dbConnect('HomepassManagement').getConnection();
+    // conn = await dbConnect('HomepassManagement').getConnection();
+    conn = await dbConnect('pegasus').getConnection();
     const [rows] = await conn.query(q);
     return new Response(JSON.stringify(rows), { status: 200 });
   } catch (error) {
     console.error('Error querying database:', error);
     return new Response('Internal Server Error', { status: 500 });
   } finally {
-    dbConnect('HomepassManagement').releaseConnection()
+    dbConnect('pegasus').releaseConnection()
     conn.close()
   }
 }

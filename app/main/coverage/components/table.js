@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Form, Input, DatePicker, Select, notification } from 'antd';
 import moment from 'moment';
-import { FaArrowDown } from 'react-icons/fa';
 import { FaAnglesDown, FaAnglesUp } from "react-icons/fa6";
 
-const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrderCreation }) => {
+const Table = ({ datas, markerPosition, user, showOrderCreation, setShowOrderCreation }) => {
+  console.log(user)
   const [form] = Form.useForm();
   const [currentDate, setCurrentDate] = useState(null);
   const [completionDate, setCompletionDate] = useState(null);
 
   const [generateCustomerId] = useState(() => {
-    return `${session.user.name.slice(0, 3).toUpperCase()}-${moment().valueOf()}`;
+    return `${user.tenant.slice(0, 3).toUpperCase()}-${moment().valueOf()}`;
   });
 
   const packageOptions = [
@@ -85,22 +85,21 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
     }
   ]
 
-  const listInput = ['Customer Name', 
-    'Phone Number', 'Street Name', 'Street Number', 'Full Address'] 
+  const listInput = ['Customer Name', 'Phone Number', 'Street Name', 'Street Number'] 
+// 'Full Address'
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const newDateTime = moment().format('YYYY-MM-DD HH:mm:ss');
+  //     setCurrentDate(newDateTime);
+  //   }, 1000);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      const newDateTime = moment().format('YYYY-MM-DD HH:mm:ss');
-      setCurrentDate(newDateTime);
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, [form]);
+  //   return () => clearInterval(interval);
+  // }, [form]);
 
 
   const onFinish = async (values) => {
-    const email = session.user.email
-    const password = session.user.token
+    const email = user.email
+    const password = user.pass_id
     const payload = {
       "externalId": generateCustomerId,
       "priority": "1",
@@ -158,8 +157,14 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
         {
           "id": "ASIANET MEDIA TEKNOLOGI",
           "role": "Seller",
-          "name": "ASIANET MEDIA TEKNOLOGI"
-        }
+          "name": "ASIANET MEDIA TEKNOLOGI",
+          "contactMedium": [
+            {
+              "mediumType": "Sales Name",
+              "phoneNumber": user?.name
+            }
+          ],
+        },
       ],
       "productOrderItem": [
         {
@@ -216,8 +221,8 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
         notification.error({
           message: 'Error',
           description: `Error: ${errorData.returnMessage} (${errorData.statusCode})`,
-          placement: 'top',
-          duration: null
+          placement: 'topRight',
+          duration: 10
         });
         return;
       }
@@ -227,9 +232,10 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
         notification.success({
           message: 'Success!',
           description: `OrderId: ${result.id}`,
-          placement: 'top',
-          duration: null
+          placement: 'topRight',
+          duration: 10
         });
+        setShowOrderCreation(false)
       }
     } catch (error) {
       console.error('Fetch failed:', error.message);
@@ -247,24 +253,24 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
     >
       <div 
         onClick={() => setShowOrderCreation(!showOrderCreation)} 
-        className='flex justify-center gap-2 items-center font-quicksand text-xs pb-1 pt-2 sm:pt-4 font-bold 
-          text-amtblue border-t-2 border-green-500/20 hover:cursor-pointer hover:drop-shadow-md hover:scale-105 transition-all duration-500'>
+        className='flex justify-center gap-2 items-center font-quicksand text-xs py-2 sm:pt-4 font-bold 
+          text-amtorange border-t-2 border-green-500/20 hover:cursor-pointer hover:drop-shadow-md hover:scale-105 transition-all duration-500'>
         <h2>Order Creation Form</h2>
         {showOrderCreation ? (
           <FaAnglesUp
             size={8}
-            className="text-amtblue" 
+            className="text-amtorange" 
           />
         ) : (
           <FaAnglesDown
             size={8}
-            className="text-amtblue" 
+            className="text-amtorange" 
           />
         )}
       </div>
       
       <div className={`${showOrderCreation ? '' : 'hidden'}`}>
-        <table className={`w-full text-xxs rounded-md shadow-md border overflow-hidden `}>
+        <table className={`w-full text-xxs rounded-md shadow-md border-2 overflow-hidden `}>
           <tbody>
             <tr>
               <td className="w-[35%] px-2 py-1 text-right font-bold border-b border-slate-50 bg-slate-200">
@@ -276,7 +282,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                   readOnly
                   className="px-3 py-1.5 text-xs font-bold border-none rounded-none text-green-600 bg-slate-50 hover:bg-slate-50 focus:bg-slate-50"
                 />
-              </td>
+              </td>              
             </tr>
 
             {listInput.map((i) => (
@@ -290,13 +296,13 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                     className='p-0 m-0 mx-2'
                     rules={[{ required: true, message: `${i} is required!` }]}
                   >
-                    <Input className="px-2 border-none rounded-md shadow-sm text-xs my-1.5" />
+                    <Input className="px-2 border-none rounded-md shadow-inner-dark text-xs my-1.5" />
                   </Form.Item>
                 </td>
               </tr>
             ))}
 
-            {Object.entries(datas).map(([key, value]) => (
+            {/* {Object.entries(datas).map(([key, value]) => (
               <tr key={key}>
                 <td className="w-[35%] px-2 py-1 text-right font-bold border-b border-slate-50 bg-slate-200">
                   {key.charAt(0).toUpperCase() + key.slice(1)}
@@ -309,7 +315,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                   />
                 </td>
               </tr>
-            ))}
+            ))} */}
             
             <tr>
               <td className="w-[35%] px-2 py-1 text-right font-bold border-b border-slate-50 bg-slate-200">
@@ -322,7 +328,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                     rules={[{ required: true, message: `Package is required!` }]}
                   >
                   <Select
-                    className="w-full"
+                    className="formregist w-full"
                     placeholder="Select Package"
                     showSearch
                     options={packageOptions.map((item) => ({
@@ -350,12 +356,32 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                     showTime
                     disabledDate={(current) => current && current < moment().startOf('day')}
                     // format="YYYY-MM-DD HH:mm:ss"
+                    className='shadow-inner-dark'
                     onChange={(date, dateString) => setCompletionDate(date)}
                   />
                   </Form.Item>
               </td>
             </tr>
             <tr>
+              <td className="w-[35%] px-2 py-3 text-right font-bold border-b border-slate-50 bg-slate-200">
+                Full Address
+              </td>
+              <td className="w-[65%] h-full p-0 m-0 border border-slate-200 overflow-hidden bg-slate-50">
+                <Form.Item
+                  name='Full Address'
+                  className='p-0 py-2 m-0 mx-2'
+                  rules={[{ required: true, message: `Full Address is required!` }]}
+                >
+                  <Input.TextArea
+                    className="px-2 border-none rounded-md shadow-inner-dark text-xs my-1.5"
+                    rows={4}
+                    placeholder="Please manually enter address for verification purpose!"
+                    // manual address input to confirm specific location for system verrification purpose
+                  />
+                </Form.Item>
+              </td>
+            </tr>
+            {/* <tr>
               <td className="w-[35%] px-2 py-1 text-right font-bold border-b border-slate-50 bg-slate-200">
                 Order Date
               </td>
@@ -366,7 +392,7 @@ const Table = ({ datas, markerPosition, session, showOrderCreation, setShowOrder
                   className="px-3 py-1.5 text-xs border-none rounded-none bg-slate-50 hover:bg-slate-50 focus:bg-slate-50"
                 />
               </td>
-            </tr>
+            </tr> */}
 
             
 

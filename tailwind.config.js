@@ -26,6 +26,7 @@ module.exports = {
       },
       boxShadow: {
         whiteMd: '0 2px 4px 2px rgba(255, 255, 255, .1), 0 2px 4px 6px rgba(0, 0, 0, .2)',
+        'inner-dark': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.1);',
       },
       animation: {
         slowBounce: 'bounce 4s infinite',
