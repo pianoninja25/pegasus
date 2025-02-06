@@ -229,7 +229,7 @@ const MapContainer = ({ polygons }) => {
       if (sitelist.status === 200) {
         const fatlist = await getFAT(sitelist.data);
         const matrix = await getGoogleMatrix(fatlist)
-        onCheckAvailability(matrix, 'Covered')
+        onCheckAvailability(user, matrix, 'Covered')
       } 
       // IF THE LOCATION OUTSIDE BOUNDARIES
       else if (sitelist.status === 404) {
@@ -270,7 +270,7 @@ const MapContainer = ({ polygons }) => {
           { "fatid": i.fatid },
           { headers: { Authorization: `Bearer ${session.access_token}` }}
         );
-        
+
         const data = await response.data;
   
         if (data.length > 0) {
