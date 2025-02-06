@@ -218,7 +218,7 @@ const MapContainer = ({ polygons }) => {
     } catch (error) {
       console.error('Error fetching near fat:', error);
       throw error;
-    } 
+    }
   }
   
   const onCheckCoverage = async () => {
@@ -236,7 +236,7 @@ const MapContainer = ({ polygons }) => {
         const nearfatlist = await getNearbyFAT(user, markerPosition?.lat, markerPosition?.lng)
         const nearmatrix = await getGoogleMatrix(nearfatlist)
         if(nearfatlist.length > 0) {
-          onCheckAvailability(nearmatrix, 'Maybe')
+          onCheckAvailability(user, nearmatrix, 'Maybe')
         } else {
           notification.error({
             message: 'Area not covered!',
@@ -259,17 +259,19 @@ const MapContainer = ({ polygons }) => {
     }
   };
 
-  const onCheckAvailability = async (dataFAT, pstatus) => {
+  const onCheckAvailability = async (session, dataFAT, pstatus) => {
     for (const i of dataFAT) {
       try {
         setLoading(true);
-  
-        const response = await fetch(`/api/coverage/check_availability?fatid=${i.fatid}`);
-        if (!response.ok) {
-          throw new Error(`Failed to fetch data. Status: ${response.status}, FATID: ${i.fatid}`);
+        if (session && isTokenExpired(session.access_token)) {
+          await refreshAccessToken(session);
         }
-  
-        const data = await response.json();
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_PEGASUS_API}/check-availability`, 
+          { "fatid": i.fatid },
+          { headers: { Authorization: `Bearer ${session.access_token}` }}
+        );
+        
+        const data = await response.data;
   
         if (data.length > 0) {
           data[0].distances = `${i.distance} m`;
@@ -296,7 +298,7 @@ const MapContainer = ({ polygons }) => {
         }
       } catch (error) {
         console.error(`Error processing FATID: ${i.fatid}`, error);
-        message.error({ content: `Check your internet connection!` });
+        // message.error({ content: `Check your internet connection!` });
         setLoading(false);
       } finally {
         setLoading(false);
@@ -306,120 +308,8 @@ const MapContainer = ({ polygons }) => {
     console.log('No data found for any FATID.');
     return null;
   };
-    
 
 
-
-
- 
-
-
-  // // // Handle check FAT nearby
-  // // const onCheckCoverage = async () => {
-  // //   try {
-  // //     setLoading(true)
-  // //     setHomepass({})
-  // //     const response = await fetch(`/api/coverage?query=check_coverage&client=${session?.user.name}&long=${markerPosition?.lng}&lat=${markerPosition?.lat}`);
-
-  // //     if (!response.ok) {
-  // //       message.error('Failed to fetch data!');
-  // //       return false;
-  // //     }
-  // //     const data = await response.json();
-  // //     if(data.length > 0) {
-  // //       message.success('Area covered!')
-  // //       const nearbyFAT = await onCheckGoogleMatrix(data)
-  // //       onCheckAvailability(nearbyFAT)
-  // //       return
-  // //     } else {
-  // //       message.warning('Area Not Covered!');
-  // //       setLoading(false)
-  // //     }
-  // //   } catch (error) {
-  // //     console.error('Error fetching data:', error);
-  // //     message.error('An error occurred while fetching data.');
-  // //   } 
-  // // };
-
-  //  // Handle check route directions & distance
-  // const onCheckGoogleMatrix = async (datas) => {
-  //   try {
-  //     const response = await fetch(`/api/check_google_matrix`, {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json',
-  //       },
-  //       body: JSON.stringify({
-  //         origins: markerPosition,
-  //         destinations: datas
-  //       }),
-  //     });
-  
-  //     if (!response.ok) {
-  //       console.error('Error:', response.statusText);
-  //       return;
-  //     }
-  
-  //     const data = await response.json();
-  //     console.log(data)
-  //     return data
-  //   } catch (error) {
-  //     console.error('Fetch error:', error);
-  //   }
-  // };
-  
-  // // Handle check homepass availability
-  // const onCheckAvailability = async (dataFAT) => {
-  //   for (const i of dataFAT) {
-  //     try {
-  //       setLoading(true);
-  
-  //       const response = await fetch(`/api/coverage/check_availability?fatid=${i.fatid}`);
-  //       if (!response.ok) {
-  //         throw new Error(`Failed to fetch data. Status: ${response.status}, FATID: ${i.fatid}`);
-  //       }
-  
-  //       const data = await response.json();
-  
-  //       if (data.length > 0) {
-  //         data[0].distances = `${i.distance} m`;
-  //         message.success({ content: `Homepass available for FATID: ${i.fatid}` });
-  //         setHomepass(data[0]);
-  
-
-  //         const [lat, lng] = i.destination.split(',').map(Number);
-  //         const directionsService = new google.maps.DirectionsService();
-  //         directionsService.route(
-  //           {
-  //             origin: { lat: markerPosition.lat, lng: markerPosition.lng },
-  //             destination: { lat, lng },
-  //             travelMode: google.maps.TravelMode.WALKING,
-  //           },
-  //           (result, status) => {
-  //             if (status === google.maps.DirectionsStatus.OK) {
-  //               setDirections(result);
-  //             } else {
-  //               console.error(`Directions request failed: ${status}`);
-  //             }
-  //           }
-  //         );
-  
-  //         return data; // Stop processing after finding the first available FATID
-  //       } else {
-  //         message.warning({ content: `Homepass not available for FATID: ${i.fatid}` });
-  //       }
-  //     } catch (error) {
-  //       console.error(`Error processing FATID: ${i.fatid}`, error);
-  //       message.error({ content: `Check your internet connection!` });
-  //       setLoading(false);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   }
-  
-  //   console.log('No data found for any FATID.');
-  //   return null;
-  // };
   return (
     <div className='flex h-screen shadow-md bg-slate-300 sm:p-2 sm:pt-14'>
       {/* h-[calc(100vh_-_.5rem)]  */}
